@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.aboutus {
+    padding: 40px;
+    height: 120px;
+    position: sticky;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.h1,
+.h2,
+.h9 {
+    padding: 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.con1,
+.con2 {
+    background-color: rgb(240, 235, 235);
+}
+
+.p1 {
+    padding: 10px 25px 10px 40px;
+}
+
+.p2 {
+    padding: 10px 25px 10px 40px;
+}
+
+.container {
+    margin-top: 20px;
+    background-color: lavenderblush;
+}
+
+.container1,
+.container2,
+.container3,
+.container4,
+.container5,
+.container6 {
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+}
+
+.container1 {
+    position: relative;
+    left: 100px;
+}
+
+.container2 {
+    position: relative;
+    left: 500px;
+}
+
+.container3 {
+    position: relative;
+    left: 100px;
+}
+
+.container4 {
+    position: relative;
+    left: 500px;
+}
+
+.container5 {
+    position: relative;
+    left: 100px;
+}
+
+.container6 {
+    position: relative;
+    left: 500px;
+}
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6 {
+    padding: 4px;
+    width: 350px;
+    height: 200px;
+}
+
+.h3,
+.h4,
+.h5,
+.h6,
+.h7,
+.h8 {
+    margin-top: 5px;
+    text-align: center;
+    font-weight: normal;
+}
+
+ol{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.list li {
+    padding: 10px 10px 10px 150px;
+}
+
+.list2 {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 8px;
+    background-color: rgb(44, 43, 43);
+}
+
+.list2 li a {
+    text-decoration: none;
+    padding: 10px 10px 10px 30px;
+    color: white;
+}
+
+.con2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}

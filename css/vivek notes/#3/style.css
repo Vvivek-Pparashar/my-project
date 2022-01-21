@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0;
+}
+.vivek{
+    height: 230px;
+    width: 300px;
+    margin: 130px 100px 120px 100px;
+    padding: 50px 100px 30px 150px;
+    background: red;
+    
+   
+    border: 30px  double yellow;
+    
+    border-radius: 300px;
+    
+}

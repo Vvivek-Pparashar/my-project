@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root{
+        --main-bg-color:  #2874f0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    background-color: var(--main-bg-color);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 85px;
+    padding: 0 23px;
+    margin-left: -44px;
+    height: 56px;
+}    
+
+nav ul{
+    height: 55px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.search input{
+    width: 502px;
+    padding-left: 20px;
+    padding-right: 30px;
+    margin: 0 57px 0 -12px;
+    height: 40px;
+    border: 0px;
+}
+
+.search img{
+    width: 20px;
+    position: absolute;
+    top: 19px;
+    right: 492px;
+}
+
+.login button{
+    width: 116px;
+    height: 32px;
+    color: var(--main-bg-color);
+    background: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    margin-right: 55px;
+    border: 0px;
+}
+
+
+nav ul li{
+    list-style: none;
+    padding:0 18px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.container{
+    min-height: calc(100vh - 55px - 11vh);
+    background-color: black;
+    
+}
+
+.fst{
+    display: flex;
+    justify-content: space-around;
+}
+
+.fst img{
+    width: 97.5vw;
+    margin-top: 10px;
+}
+
+
+
+.slider{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.slider img{
+    width: 47.8vw;
+}
+
+.card{
+    max-width: 90vw;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+}
+.card img{
+    width: 160px;
+    height: 160px;
+}
+
+.my-2{
+    margin: 13px 0;
+}
+
+.card h2{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.my-3{
+    text-align: center;
+    margin: 5px 0;
+}
+
+.my-4{
+    text-align: center;
+    color: tomato;
+    margin: 5px 0; 
+}
+footer{
+    height: 11vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+}

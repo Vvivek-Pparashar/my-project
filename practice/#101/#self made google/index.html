@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>google</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            display: flex  ; 
+            align-items: center;
+            justify-content: flex-end;
+            margin-right: 30px;
+            margin-top: 14px;
+        }
+
+        nav a{
+            margin: 7px;
+            display: inline-block;
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        nav img{
+            width: 30px;
+            padding: 5px;
+            border-radius: 70px;
+            transform-style:flat;
+            cursor:pointer;
+            margin-left: 10px;
+        }
+        
+        .section-1{
+            flex: 1;
+            align-items: center;
+            margin: 0px auto;
+            
+        }
+
+        .section-1 .logo{
+            display: block;
+            object-position: center;
+            /* position: relative; */
+            margin-top: -30px;
+            width: 400px;
+            margin: 0px auto;
+        }
+
+        .vivek{
+            width: 580px;
+            margin: 0px auto;
+            position: relative;
+            margin-top: -8px;
+            text-align: center;
+        }
+        .vivek .input{        
+            width: 600px;
+            height: 25px;
+            border-radius: 30px;
+            border: 1px solid #ddd;
+            display: block;
+            padding: 13px;
+            padding-left: 45px;
+            font-size: 16px;
+            width: 100%;
+            transition: box-shadow 100ms;
+            outline: none;
+        }
+        .vivek .input:hover{
+             border: 1px solid #fff;
+             box-shadow: 0 0 2px rgb(0,0,0,0.05),
+                0 0 2px rgb(0,0,0,0.05),
+                0 0 3px rgb(0,0,0,0.05),
+                0 0 4px rgb(0,0,0,0.05),
+                0 0 5px rgb(0,0,0,0.05),
+                0 0 4px rgb(0,0,0,0.05),
+                0 0 5px rgb(0,0,0,0.05)
+} 
+
+.vivek .search{
+    width: 20px;
+    /* height: 20px; */
+    position: absolute;
+    top: 13px;
+    left: 14px;
+}
+.vivek .mic{
+    width: 14px;
+    position: absolute;
+    top: 13px;
+    right: 24px;
+}
+.s-btn{
+    border: 1px solid transparent;
+    padding: 9px 15px;
+    color: #666;
+    font-size: 14px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 28px;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 100ms;
+}
+
+.s-btn:hover{
+    border:1px solid #aaa;
+}
+
+.lang{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.lang a{
+    margin:5px;
+}
+
+footer{
+    background: #f2f2f2;
+    margin-top: 125px;
+}
+h4{
+    color: #5f6368;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 39.5px;
+    padding-left: 29px;
+    border: 1px solid #eee;
+}
+
+footer a{
+    display: inline-block;
+    color:#5f6368;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.link{
+    border-top: 1px solid #ddd;
+   display: flex;
+}
+
+.link-1{
+    padding-left: 18.7px;
+    flex: 1;
+}
+
+.link-2{
+    padding-right: 18.7px;
+    
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Gmail</a>
+        <a href="#">Image</a>
+        <img  src="2.png" alt="error" >
+        <img class="2" src="https://lh3.googleusercontent.com/ogw/ADea4I4OwfJNqULfXARVi-fFHA8G-vvpA0WRJjdknU5U=s32-c-mo" srcset="https://lh3.googleusercontent.com/ogw/ADea4I4OwfJNqULfXARVi-fFHA8G-vvpA0WRJjdknU5U=s32-c-mo 1x, https://lh3.googleusercontent.com/ogw/ADea4I4OwfJNqULfXARVi-fFHA8G-vvpA0WRJjdknU5U=s64-c-mo 2x " alt="error" >
+    </nav>
+
+    <section class="section-1">
+        <img src="3.png" alt="error" class="logo">
+        <form><br>
+            <div class="vivek">
+                <img src="4.png" alt="error" class="search">
+                <input type="text" class="input">
+                <img src="5.png" alt="error" class="mic">
+                <input type="submit" class="s-btn" value="Google search">
+                <input type="submit" class="s-btn" value="I am feeling well">
+            </div>
+        </form>
+        
+        <div class="lang">
+            Google offered in :
+            <a href="#" >English</a>
+            <a href="#">Hindi</a>
+            <a href="#">Russian</a>
+            <a href="#">chinese</a>
+
+        </div>
+    </section>
+
+    <footer>
+        <h4>India</h4>
+       
+        <div class="link">
+            <div class="link-1">
+                <a href="#" >About</a>
+                <a href="#" >Advertising</a>
+                <a href="#" >Business</a>
+                <a href="#" >How Google work</a>
+            </div>
+    
+            <div class="link-2">
+                <a href="#" >Privacy</a>
+                <a href="#" >Terms</a>
+                <a href="#" >Setting</a>
+            </div>
+        </div>
+        
+    </footer>
+    
+</body>
+</html>

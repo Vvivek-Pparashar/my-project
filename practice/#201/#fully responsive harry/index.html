@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <img src="https://w7.pngwing.com/pngs/516/413/png-transparent-logo-trademark-company-logo-emblem-free-logo-design-template-company.png" id="home1">
+
+            <div id="sidenav">
+                <ul>
+                    <li><a href="#home1">Home</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#about-client">About</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+            <div id="menubtn">
+                <img src="https://icon-library.com/images/three-bars-icon/three-bars-icon-29.jpg" id="menu">
+            </div>
+        </nav>
+
+        <div class="text" id="home">
+            <h1>Welcome to my Website</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum molestiae ratione ab eveniet ipsa<br> tenetur debitis, quos laborum dolor impedit.zz</p>
+            <button>Order Now</button>
+        </div>
+    </div>
+
+    <div class="services" id="service">
+        <h1 id="animation" >Our Services</h1>
+        <div class="container">
+            <div class="first-card">
+                <a href="https://www.zomato.com/rohtak/restaurants/burger?category=1"><img src="https://images.unsplash.com/photo-1585238341710-4d3ff484184d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=804&q=80"></a>
+                <h1>Food Ordering</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero modi hic, quis natus labore dolor voluptate officia esse debitis quo pariatur aspernatur voluptatem tempora itaque minus assumenda vitae suscipit? Consectetur!</p>
+            </div>
+            <div class="first-card">
+                <a href="https://www.zomato.com/rohtak/restaurants/burger?category=1"><img src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"></a>
+                <h1>Drink</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero modi hic, quis natus labore dolor voluptate officia esse debitis quo pariatur aspernatur voluptatem tempora itaque minus assumenda vitae suscipit? Consectetur!</p>
+            </div>
+            <div class="first-card">
+                <a href="https://www.zomato.com/rohtak/restaurants/burger?category=1"><img src="https://images.unsplash.com/photo-1476631840528-13bdc7f18072?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8ZGVsaXZlcnklMjBtYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"></a>
+                <h1>Fast Delivery</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero modi hic, quis natus labore dolor voluptate officia esse debitis quo pariatur aspernatur voluptatem tempora itaque minus assumenda vitae suscipit? Consectetur!</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var menubtn = document.getElementById("menubtn");
+        var sidenav = document.getElementById("sidenav");
+        var menu = document.getElementById("menu");
+
+        // sidenav.style.right = "-250px";
+
+        menubtn.onclick = function () {
+            if (sidenav.style.right == "-250px") {
+                sidenav.style.right = "0";
+                menu.src = "https://cutewallpaper.org/24/x-sign-png/466823971.jpg";
+            }
+
+            else {
+                sidenav.style.right = "-250px";
+                menu.src = "https://icon-library.com/images/three-bars-icon/three-bars-icon-29.jpg";
+            }
+        }
+    </script>
+
+    <div class="our-client" id="about-client">
+        <h1>Our Client</h1>
+        <div class="gallery">
+            <img src="https://imediavan.com/wp-content/uploads/2018/01/logo-wordmark1.gif">
+        </div>
+    </div>
+
+    <footer id="contact">
+        <p>Copy right @ vivek parashar</p>
+    </footer>
+    
+</body>
+</html>

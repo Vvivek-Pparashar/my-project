@@ -1,0 +1,80 @@
+nav{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+    align-items: center;
+}
+
+nav img{
+    margin-bottom: 3%;
+}
+
+nav ul li a{
+    font-size: 0.9rem;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 3px 10px;
+    border-radius: 15px;
+}
+
+.text h1{
+    font-size: 20px;
+    margin-bottom: 1%;
+}
+
+.text p{
+    font-size: 10px;
+    margin-bottom: 5%;
+    letter-spacing: 1px;
+}
+
+button{
+    background: transparent;
+    padding: 7px 15px;
+    border: 1px solid white;
+    color: white;
+    margin-bottom: 10%;
+    font-size: 13px;
+    transition: 0.5s;
+}
+
+.services h1{
+    font-size: 28px;
+}
+
+.container{
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 2%;
+}
+
+.first-card img{
+    width: 50%;
+    height: 30vw;
+    border-radius: 20%;
+}
+
+.first-card h1{
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.first-card p{
+    font-size: 10px;
+}
+
+.our-client h1{
+    font-size: 30px;
+}
+
+.gallery img{
+    width: 70%;
+    height: 60vw;
+}
+
+footer p{
+    font-size: 13px;
+    letter-spacing: 00.3px;
+}

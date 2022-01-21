@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+
+.aboutus {
+    padding: 40px;
+    height: 120px;
+    width: 100%;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.con1{
+    background-color: rgb(240, 235, 235);
+    width: 100%;
+}
+
+.con1 .h1{
+    text-decoration: underline;
+    padding: 10px;
+    text-align: center;
+}
+
+.con1 p{
+    padding: 10px 25px 10px 40px;
+}
+
+.container {
+    margin-top: 20px;
+    background-color: lavenderblush;
+    width: 100%;
+}
+
+.container h2{
+    text-align: center;
+    text-decoration: underline;
+    padding: 10px;
+}
+
+.all-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.all-container h4{
+    margin-top: 5px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.all-container img{
+    padding: 4px;
+    width: 350px;
+    height: 200px;
+}
+
+.container1{
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    left: 7vw;
+}
+
+.container2{
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    justify-content: right;
+    right: 6vw;
+}
+
+@media screen and (max-width: 600px) {
+    .all-container{
+        width: 100%;
+    }
+
+    .container1{
+        justify-content: center;
+        left: 0%;
+    }
+    .container2{
+        justify-content: center;
+        left: 0%;
+    }
+
+    .all-container img{
+        width: 70vw;
+    }
+    
+}
+
+.con2 {
+    background-color: rgb(240, 235, 235);
+    width: 100%;
+}
+
+.con2 h2{
+    text-align: center;
+    text-decoration: underline;
+    padding: 10px;
+}
+
+.con2 ul{   
+    display: flex;
+    flex-direction: column;
+}
+
+ .list li{
+    padding: 10px 10px 10px 15vw;
+    list-style: circle;
+}
+
+@media screen and (max-width: 600px) {
+    .list li{
+        padding:10px 0 10px 20px;
+    }
+    
+}
+
+footer{
+    width: 100%; 
+    background-color: rgb(44, 43, 43);
+}
+
+.list2{
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.list2 li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+.list2 li a{
+    text-decoration: none;
+    color: white;
+}
+
+.list2 li a:hover{
+    text-decoration: underline;
+}

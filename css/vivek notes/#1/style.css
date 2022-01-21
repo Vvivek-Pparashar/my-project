@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+}
+
+#red{
+    background-color: red;
+}
+
+.red{
+    background-color: yellow;
+}
+
+.blue{
+    background-color: blue;
+    color:yellow;
+}

@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    background: black;
+    color: white;
+    width: 100px;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    background-color: red;
+    color: white;
+}
+
+.vivek{
+    font-style: oblique;
+    font-language-override: initial;
+    width: 500px;
+    height: 1000px;
+    background-color: yellowgreen;
+    background-image: url(vivek.jfif.jpg);
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+}

@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("image/bg-org.avif");
+    background-size: cover;
+    background-position: center;
+    font-family: 'poppins', sans-serif;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+}
+
+nav img{
+    width: 250px;
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 15px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+
+.model{
+    position: absolute;
+    top: 15%;
+    left: 45%;
+    text-align: center;
+}
+
+.model h3{
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.model p{
+    font-size: 20px;
+    font-weight: 100;
+    color: black;
+}
+
+.main-footer{
+    display: flex;
+}
+
+.main-footer ul{
+    display: flex;
+    text-align: center;
+    position: absolute;
+    bottom: 25px;
+    left: 13%;
+    align-items: center;
+}
+
+span{
+    margin: 0 40px 0px 40px;
+}
+
+span h1{
+    font-size: 30px;
+    line-height: 10px;
+    color: #fff;
+}
+
+span p{
+    color: #fff;
+}
+
+.button{
+    margin-left: 30px;  
+    align-items: center;
+   
+    
+}
+
+.button p{
+    border: solid #fff 3px;
+    border-radius: 30px;
+    padding: 10px 40px;
+    color:white;
+    cursor: pointer;
+    transition: 1s; 
+}
+
+.button p:hover{
+    color: black;
+    background-color: white;
+}
+
+.pg-2-header{
+    background-color: black;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
+.pg-2{
+    width: 100%;
+    height: 100vh;
+    background-image: url("image/Screenshot\ \(6\).png");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.pg-2 h1{
+    animation: move  2s linear ;
+}
+
+@keyframes move{
+    0%{
+        transform: translateY(+40px);
+    }
+
+    0%{
+        transform: translateY(-40px);
+    }
+
+    0%{
+        transform: translateY(+40px);
+    }
+}
+
+.inline-grid{
+    background-color: black;
+}
+
+.card-1{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+ img{
+    width: 505px;
+}
+
+.desc-0{
+    padding-left: 120px;
+}
+
+h1, p{
+    color: white;
+    padding-top: 10px;
+}
+
+.card-2{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.desc-1{
+    padding-right: 120px;
+}
+
+.img{
+    width: 1061px;
+}
+
+

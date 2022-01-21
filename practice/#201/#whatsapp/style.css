@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-side {
+  width: 31%;
+  height: 100vh;
+  background-color: #131c21;
+  border-right: 1px solid #444a4e;
+}
+
+.header {
+  position: sticky;
+  top: 0%;
+}
+
+.left-side header {
+  width: 100%;
+  height: 9vh;
+  background-color: #2a2f32;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 13px;
+}
+
+.header-img {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+header p {
+  color: #d1d7db;
+  font-size: 12px;
+}
+
+.header-head .fa {
+  font-size: 23px;
+  color: #d1d7db;
+  margin-right: 28px;
+  cursor: pointer;
+}
+
+.below-header {
+  display: flex;
+  height: 15vh;
+  background-color: #085373;
+  align-items: center;
+}
+
+.below-header .fa {
+  font-size: 30px;
+  margin-left: 20px;
+  margin-right: 10px;
+  color: #8eb2be;
+}
+
+.text h6 {
+  font-size: 15px;
+  color: #d1d7db;
+}
+
+.text p {
+  font-size: 14px;
+  color: #d1d7db;
+}
+
+.box {
+  background-color: #131c21;
+  padding: 7px 0;
+  border-bottom: 1px solid #252d32;
+}
+
+.search {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  /* background-color: #3a4144; */
+}
+
+.search .fa {
+  position: absolute;
+  top: 8px;
+  left: 7px;
+  color: #9c9ea1;
+}
+
+.search input {
+  width: 100%;
+  padding: 0 50px;
+  height: 35px;
+  border-radius: 30px;
+  border: none;
+  background-color: #3a4144;
+}
+
+.chat {
+  /* overflow: scroll; */
+  height: 448px;
+  overflow-y: scroll;
+  cursor: pointer;
+}
+
+.chat-name {
+  width: 100%;
+  height: 65px;
+  background-color: #131c21;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.chat-name:hover {
+  background-color: #262d31;
+}
+
+.chat-name img {
+  width: 50px;
+  height: 50px;
+  border-radius: 32px;
+  margin-right: 15px;
+}
+
+.chat-box {
+  width: 100%;
+  padding: 15px 0;
+  border-top: 1px solid #252d32;
+}
+
+.chat-box h4{
+  color: #cbccce;
+}
+
+.chat-box p{
+    color: #cbccce;
+    font-size: 14px;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(57, 64, 69);
+}
+
+.right-side {
+  background-color: #085373;
+  width: 69%;
+}
+
+header {
+  height: 9vh;
+  background-color: #2a2f32;
+  display: flex;
+  align-items: center;
+  padding: 0 13px;
+}
+
+.header-1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name-part h1{
+    color:#cbccce;
+    font-size: 17px;
+}
+
+.name-part p{
+    color: #cbccce;
+    font-size: 13px;
+}
+
+.logo-part .fa{
+    font-size: 20px;
+    color: #828588;
+    margin-right: 20px;
+}
+.inbox{
+    width: 100%;
+    height: 82vh;
+    background-image: linear-gradient(rgba(1, 3, 14, 0.7), rgba(1, 3, 12, 0.7)), url("images/Wallpapers-on-WhatsApp.jpg");
+    overflow-y: auto;
+}
+
+.inbox-text{
+    width: 85%;
+    margin: auto;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info p{
+    color: #cbccce;
+    font-size: 13px;
+    padding: 5px 12px;
+    background-color: rgb(52, 56, 59);
+    margin-bottom: 5px;
+    border-radius: 8px;
+    text-align: center;
+}
+.sender{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sender img{
+    width: 250px;
+    margin-bottom: 5px;
+}
+
+.sender p{
+    font-size: 13px;
+    padding: 5px 12px;
+    background-color: rgb(52, 56, 59);
+    margin-bottom: 5px;
+    border-radius: 8px;
+    color: #cbccce;
+}
+
+.reciever{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    align-items: flex-end;
+}
+
+.reciever img{
+    width: 250px;
+    margin-bottom: 5px;
+}
+
+.reciever p{
+    font-size: 13px;
+    padding: 5px 12px;
+    background-color: #058B7E;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    color: #cbccce;
+}
+
+.indox-search{
+    width: 100%;
+    height: 9vh;
+    background-color: #1E2428;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.indox-search .fa{
+    font-size: 25px;
+    margin-right: 20px;
+    color: #828588;
+}
+
+.indox-search input{
+    width: 85%;
+    padding: 10px 10px;
+    border-radius: 20px;
+    border: none;
+    margin-right: 20px;
+    background-color: #3a4144;
+}

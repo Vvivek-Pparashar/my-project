@@ -1,0 +1,789 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.header{
+    width: 100%;
+    /* height: 100vh; */
+    padding: 20px 70px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://c4.wallpaperflare.com/wallpaper/258/379/592/trees-tree-artistic-blue-wallpaper-preview.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'poppins', sans-serif;
+}
+
+nav h1{
+    color: #ff7200;
+    font-size: 40px;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 40px;
+}
+
+nav ul li{
+    list-style: none;
+    margin-left: 60px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover{
+    color: #ff7200;
+}
+
+.search-box input{
+    background: transparent;
+    border: 1px solid #ff7200;
+    padding: 10px 20px;
+    color: white;
+    width: 250px;
+    position: relative;
+    border-right: none;
+    border-bottom-left-radius: 5px;
+}
+
+.search-box button{
+    padding: 10px 20px;
+    color: white;
+    background: #ff7200;
+    border: none;
+    border: 1px solid #ff7200;
+    border-bottom-right-radius: 5px;
+    width: 90px;
+    margin-left: -4px;
+}
+
+.text-part{
+    margin-top: 9%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.part-1{
+    width: 50%;
+}
+.part-1 h2{
+    color: white;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+.part-1 h1{
+    color: #ff7200;
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+.part-1 p{
+    color: white;
+    font-family: 'poppins', sans-serif;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+}
+
+.part-1 button{
+    margin-top: 30px;
+    padding: 10px 50px;
+    border-radius: 10px;
+    border: 0px;
+    background: #ff7200;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.form{
+    background: linear-gradient(rgba(0,0,0,7), rgba(0,0,0,0.7));
+    padding: 25px;
+    margin-bottom: 38px;
+}
+
+.form h3{
+    color: #ff7200;
+    padding: 10px 80px;
+    border-radius: 10px;
+    background: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.input{
+    display: grid;
+}
+
+.input input{
+    margin-top: 7%;
+    padding: 10px;
+    width: 100%;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.form button{
+    width: 100%;
+    margin: auto;
+    padding: 10px 0;
+    margin-top:10% ;
+    font-size: 20px;
+    font-weight: lighter;
+    color: black;
+    background: #ff7200;
+    border: none;
+    border-radius: 8px ;
+    cursor: pointer;
+}
+
+.form p{
+    color: white;
+    text-align: center;
+    margin-top: 9%;
+    font-family: 'poppins', sans-serif;
+}
+
+span{
+    color: #ff7200;
+    cursor: pointer;
+}
+
+.font-awesome{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.fa{
+    margin-top: 6%;
+    color: white;
+    font-size: 40px;
+    margin-left: 14px ;
+    cursor: pointer;
+}
+
+.fa-instagram:hover{
+    color: rgb(204, 16, 16);
+}
+
+.fa-facebook:hover{
+    color: rgb(16, 75, 204);
+}
+
+.fa-twitter:hover{
+    color: rgb(16, 75, 204);
+}
+
+.fa-whatsapp:hover{
+    color: rgb(52, 155, 12);
+}
+
+.fa-google:hover{
+    color: rgb(204, 16, 16);
+}
+
+@media screen and (max-width : 450px){
+    .header{
+        padding:10px;
+    }
+    
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    nav h1{
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+    
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    nav ul li{
+        list-style: none;
+        margin-left: 20px;
+    }
+    
+    nav ul li a{
+        font-size: 15px;
+    }
+    
+    .search-box input{
+        width: 60vw;
+        font-size: 10px;
+        position: relative;
+    }
+    
+    .search-box button{
+        width: 27vw;
+        margin-left: -4px;
+        font-size: 10px;
+        padding: 10px 7vw;
+    }
+    
+    .text-part{
+        margin-top: 9%;
+    }
+    
+    .part-1{
+        width: 80%;
+        margin: auto;
+    }
+    .part-1 h2{
+        font-size: 25px;
+        letter-spacing: 0.8px;
+    }
+    
+    .part-1 h1{
+        font-size: 35px;
+        letter-spacing: 0.8px;
+    }
+    
+    .part-1 p{
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.8px;
+    }
+    
+    .part-1 button{
+        padding: 10px 30px;
+        font-size: 13px;
+        margin-bottom: 30%;
+    }
+    
+    .form{ 
+        padding: 10px;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .form h3{
+        background-color: transparent;
+        text-align: center;
+        padding: 10px 50px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    
+    .input{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .input input{
+        margin-top: 3%;
+        padding: 7px;
+        width: 100%;
+        font-size: 13px;
+    }
+    
+    .form button{
+        width: 100%;
+        margin: auto;
+        padding: 10px 0;
+        margin-top:7% ;
+        font-size: 15px;
+        font-weight: lighter;
+    }
+    
+    .form p{
+        text-align: center;
+        margin-top: 7%;
+        font-size: 13px;
+    }
+    
+    .form .fa{
+        margin-top: 6%;
+        color: white;
+        font-size: 8vw;
+        margin-left: 3.5% ;
+        cursor: pointer;
+    }
+    
+    .fa-instagram:hover{
+        color: rgb(204, 16, 16);
+    }
+    
+    .fa-facebook:hover{
+        color: rgb(16, 75, 204);
+    }
+    
+    .fa-twitter:hover{
+        color: rgb(16, 75, 204);
+    }
+    
+    .fa-whatsapp:hover{
+        color: rgb(52, 155, 12);
+    }
+    
+    .fa-google:hover{
+        color: rgb(204, 16, 16);
+    }
+}
+
+@media screen and (min-width : 450px) and (max-width : 700px) {
+    .header{
+        padding:10px;
+    }
+    
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    nav h1{
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    nav ul li{
+        list-style: none;
+        margin-left: 25px;
+    }
+    
+    nav ul li a{
+        font-size: 17px;
+    }
+    
+    .search-box input{
+        width: 50vw;
+        font-size: 10px;
+        position: relative;
+        margin-left: 15px;
+    }
+    
+    .search-box button{
+        width: 24vw;
+        margin-left: -4px;
+        font-size: 10px;
+        padding: 10px 7vw;
+    }
+    
+    .text-part{
+        margin-top: 9%;
+    }
+    
+    .part-1{
+        width: 80%;
+        margin: auto;
+    }
+    .part-1 h2{
+        font-size: 35px;
+        letter-spacing: 0.8px;
+    }
+    
+    .part-1 h1{
+        font-size: 45px;
+        letter-spacing: 0.8px;
+    }
+    
+    .part-1 p{
+        margin-top: 10px;
+        font-size: 17px;
+        line-height: 18px;
+        letter-spacing: 0.8px;
+    }
+    
+    .part-1 button{
+        padding: 10px 50px;
+        font-size: 15px;
+        margin-bottom: 20%;
+    }
+    
+    .form{ 
+        padding: 10px 30px;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .form h3{
+        background-color: transparent;
+        text-align: center;
+        padding: 10px 50px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    
+    .input{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .input input{
+        margin-top: 3%;
+        padding: 7px;
+        width: 100%;
+        font-size: 13px;
+    }
+    
+    .form button{
+        width: 100%;
+        margin: auto;
+        padding: 10px 0;
+        margin-top:7% ;
+        font-size: 15px;
+        font-weight: lighter;
+    }
+    
+    .form p{
+        text-align: center;
+        margin-top: 7%;
+        font-size: 13px;
+    }
+    
+    .form .fa{
+        margin-top: 6%;
+        color: white;
+        font-size: 6vw;
+        margin-left: 3.5% ;
+        cursor: pointer;
+    }
+    
+    .fa-instagram:hover{
+        color: rgb(204, 16, 16);
+    }
+    
+    .fa-facebook:hover{
+        color: rgb(16, 75, 204);
+    }
+    
+    .fa-twitter:hover{
+        color: rgb(16, 75, 204);
+    }
+    
+    .fa-whatsapp:hover{
+        color: rgb(52, 155, 12);
+    }
+    
+    .fa-google:hover{
+        color: rgb(204, 16, 16);
+    }
+}
+
+@media screen and (min-width : 700px) and (max-width : 850px){
+    .header{
+        padding:10px;
+    }
+    
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    nav h1{
+        font-size: 35px;
+        margin-bottom: 5px;
+    }
+    
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    nav ul li{
+        list-style: none;
+        margin-left: 25px;
+    }
+    
+    nav ul li a{
+        font-size: 17px;
+    }
+    
+    .search-box input{
+        width: 50vw;
+        font-size: 10px;
+        position: relative;
+        margin-left: 15px;
+    }
+    
+    .search-box button{
+        width: 24vw;
+        margin-left: -4px;
+        font-size: 10px;
+        padding: 10px 7vw;
+    }
+    
+    .text-part{
+        margin-top: 9%;
+    }
+    
+    .part-1{
+        width: 80%;
+        margin: auto;
+    }
+    .part-1 h2{
+        font-size: 40px;
+        letter-spacing: 0.8px;
+    }
+    
+    .part-1 h1{
+        font-size: 50px;
+        letter-spacing: 0.8px;
+    }
+    
+    .part-1 p{
+        margin-top: 10px;
+        font-size: 17px;
+        line-height: 18px;
+        letter-spacing: 0.8px;
+    }
+    
+    .part-1 button{
+        padding: 10px 50px;
+        font-size: 15px;
+        margin-bottom: 20%;
+    }
+    
+    .form{ 
+        padding: 10px 30px;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .form h3{
+        background-color: transparent;
+        text-align: center;
+        padding: 10px 50px;
+        font-size: 19px;
+        font-weight: 600;
+    }
+    
+    .input{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .input input{
+        margin-top: 3%;
+        padding: 7px;
+        width: 100%;
+        font-size: 13px;
+    }
+    
+    .form button{
+        /* width: 80%; */
+        /* margin: auto; */
+        padding: 10px 0;
+        margin-top:7% ;
+        font-size: 15px;
+        font-weight: lighter;
+    }
+    
+    .form p{
+        text-align: center;
+        margin-top: 5%;
+        font-size: 13px;
+    }
+    
+    .form .fa{
+        margin-top: 6%;
+        color: white;
+        font-size: 4vw;
+        margin-left: 3.5% ;
+        cursor: pointer;
+    }
+    
+    .fa-instagram:hover{
+        color: rgb(204, 16, 16);
+    }
+    
+    .fa-facebook:hover{
+        color: rgb(16, 75, 204);
+    }
+    
+    .fa-twitter:hover{
+        color: rgb(16, 75, 204);
+    }
+    
+    .fa-whatsapp:hover{
+        color: rgb(52, 155, 12);
+    }
+    
+    .fa-google:hover{
+        color: rgb(204, 16, 16);
+    }
+}
+
+@media screen and (min-width : 850px) and (max-width : 1100px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+    
+    .header{
+        width: 100%;
+        padding: 20px 70px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'poppins', sans-serif;
+    }
+    
+    nav h1{
+        font-size: 40px;
+    }
+    
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 30px;
+    }
+    
+    nav ul li{
+        list-style: none;
+        margin-left: 40px;
+    }
+    
+    nav ul li a{
+        text-decoration: none;
+        font-size: 18px;
+        transition: 0.5s;
+    }
+    
+    
+    .search-box input{
+        padding: 10px;
+        width: 200px;
+        position: relative;
+        border-right: none;
+        border-bottom-left-radius: 5px;
+        
+    }
+    
+    .search-box button{
+        padding: 11px 15px;
+        width: 70px;
+        margin-left: -4px;
+        font-size: 12px;
+        text-align: left;
+    }
+    
+    .text-part{
+        margin-top: 9%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .part-1{
+        width: 50%;
+    }
+    .part-1 h2{
+        font-size: 35px;
+        letter-spacing: 1.5px;
+    }
+    
+    .part-1 h1{
+        font-size: 45px;
+        letter-spacing: 1.5px;
+    }
+    
+    .part-1 p{
+        line-height: 25px;
+        letter-spacing: 0.8px;
+    }
+    
+    .part-1 button{
+        margin-top: 30px;
+        padding: 10px 50px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    
+    .form{
+        padding: 25px;
+        margin-bottom: 38px;
+    }
+    
+    .form h3{
+        padding: 10px 80px;
+        font-size: 17px;
+        font-weight: 600;
+    }
+    
+    .input{
+        display: grid;
+    }
+    
+    .input input{
+        margin-top: 7%;
+        padding: 10px;
+        width: 100%;
+        font-size: 13px;
+    }
+    
+    .form button{
+        width: 100%;
+        margin: auto;
+        padding: 10px 0;
+        margin-top:10% ;
+        font-size: 17px;
+        
+    }
+    
+    .form p{
+        font-size: 15px;
+        text-align: center;
+        margin-top: 9%;
+    }
+    
+    
+    .font-awesome{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .fa{
+        margin-top: 6%;  
+        font-size: 40px;
+        margin-left: 14px ;
+    }
+    
+    
+    
+}

@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3), transparent), url("image/background.png");
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+.cart{
+    width: 30px;
+    cursor: pointer;
+}
+
+ul{
+    flex: 1;
+    text-align: right;
+    margin-right: 30px;
+}
+
+ul li{
+    display: inline-block;  
+    list-style: none;
+    margin: 0 30px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.text-box{
+    margin-top: 240px;
+    color: #fff;
+}
+
+.text-box p{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.text-box h1{
+    font-size: 150px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: transparent;  
+    -webkit-text-stroke: 1px white; 
+    background: url("image/back.png");
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 25s linear infinite;  
+}
+
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+.text-box h3{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.row a{
+    padding: 10px 20px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.row span{
+    font-size: 17px;
+    line-height: 20px;
+    margin-left: 5px;
+}
+
+.social-media{
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+}
+
+.social-media img{
+    display: block;    
+    width: 25px;
+    margin: 25px 5px;
+}

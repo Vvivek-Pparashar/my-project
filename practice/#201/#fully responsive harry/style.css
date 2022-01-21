@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-image: url("https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav img {
+  width: 50px;
+  border-radius: 30px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 20px;
+
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+}
+
+#menubtn img{
+    width: 0px;
+}
+
+.text {
+  margin-top: 7%;
+  text-align: center;
+  color: white;
+}
+
+.text h1 {
+  font-size: 35px;
+  margin-bottom: 1%;
+}
+
+.text p {
+  font-size: 18px;
+  margin-bottom: 1%;
+  letter-spacing: 1px;
+}
+
+button {
+  background: transparent;
+  padding: 10px 30px;
+  border: 2px solid white;
+  color: white;
+  margin-bottom: 10%;
+  font-size: 17px;
+  transition: 0.5s;
+}
+
+button:hover {
+  background: white;
+  color: black;
+}
+
+.services {
+  margin: 30px 0 50px 0;
+}
+.services #animation{
+  font-size: 40px;
+  color: rgba(2, 14, 48, 0.795);
+  text-align: center;
+  margin-bottom: 30px;
+  animation: move 5s infinite;
+}
+
+@keyframes move{
+    0%{
+        transform: translatex(0);
+    }
+    25%{
+        transform: translatex(-20%);
+        color: red;
+    }
+    75%{
+        transform: translatex(20%);
+        color: green;
+    }
+    100%{
+        transform: translatex(0);
+    }
+}
+
+.container {
+  width: 97%;
+  margin: auto;
+  display: grid;
+  grid-gap: 1%;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.first-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 3px solid black;
+  padding: 17px;
+  background-color: rgba(7, 21, 58, 0.795);
+  border-radius: 20px;
+}
+
+.first-card a {
+  width: 60%;
+}
+
+.first-card img {
+  width: 100%;
+  height: 130px;
+  border-radius: 20px;
+  transition: 0.51s;
+}
+
+.first-card img:hover {
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.first-card h1 {
+  font-size: 20px;
+  color: white;
+  margin: 10px 0;
+}
+
+.first-card p {
+  font-size: 13px;
+  letter-spacing: 0.3px;
+  color: white;
+}
+
+.our-client h1 {
+  text-align: center;
+  font-size: 40px;
+  color: rgba(2, 14, 48, 0.795);
+  margin-bottom: 30px;
+}
+
+.gallery {
+  width: 96%;
+  margin: auto;
+  background: linear-gradient(rgba(2, 24, 63, 0.678), rgba(0, 0, 0, 0.7)),
+    url("images/55.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery img {
+  width: 100%;
+  height: 330px;
+}
+
+footer {
+  background-color: black;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin: 0%;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    display: flex;
+    padding: 10px 5px;
+    justify-content: left;
+  }
+
+  nav img {
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+
+  #sidenav {
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    transition: 0.5s;
+    background-color: #3a4562;
+    opacity: 0.9;
+  }
+
+  nav ul li {
+      display: block;
+    list-style: none;
+    margin: 50px 20px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    opacity: 1;
+  }
+
+  nav ul li a:hover {
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+  }
+
+  #menubtn {
+    width: 40px;
+    height: 40px;
+    background-color: #fbfcff;
+    text-align: center;
+    z-index: 3;
+    position: fixed;
+    top: 11px;
+    right: 25px;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  #menubtn img {
+    width: 20px;
+    margin-top: 10px;
+    border-radius: 50px;
+  }
+
+  .text h1 {
+    font-size: 20px;
+    margin-bottom: 1%;
+  }
+
+  .text p {
+    font-size: 10px;
+    margin-bottom: 5%;
+    letter-spacing: 1px;
+  }
+
+  button {
+    background: transparent;
+    padding: 7px 15px;
+    border: 1px solid white;
+    color: white;
+    margin-bottom: 10%;
+    font-size: 13px;
+    transition: 0.5s;
+  }
+
+  .services h1 {
+    font-size: 28px;
+  }
+
+  .container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 2%;
+  }
+
+  .first-card img {
+    width: 100%;
+    height: 30vw;
+    border-radius: 20px;
+  }
+
+  .first-card h1 {
+    font-size: 15px;
+    margin: 10px 0;
+  }
+
+  .first-card p {
+    font-size: 10px;
+  }
+
+  .our-client h1 {
+    font-size: 30px;
+  }
+
+  .gallery {
+    width: 96%;
+    margin: auto;
+    background: linear-gradient(rgba(2, 24, 63, 0.678), rgba(0, 0, 0, 0.7)),
+      url("images/55.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: 60vw;
+  }
+
+  footer p {
+    font-size: 13px;
+    letter-spacing: 00.3px;
+  }
+}

@@ -1,0 +1,3 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+and in this we use font size for inc/dec the size of photo because they are font in real time.....
