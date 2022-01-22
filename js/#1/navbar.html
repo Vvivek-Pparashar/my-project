@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="5"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background-color: brown;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+        }
+
+        li{
+            list-style: none;
+            margin-bottom: 10px;
+            font-size: 30px;
+            color: goldenrod;
+        }
+
+        /* img{
+            width: 30px;
+            height: 30px;
+        } */
+
+        #menubtn{
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            z-index: 11;
+            /* width: 20px;
+            height: 20px;
+            background-color: black; */
+        }
+
+        .fa{
+            color: white;
+            font-size: 20px;
+        }
+
+        #navbar{
+            width: 100vw;
+            background-color: black;
+            position: fixed;
+            right: 0;
+            top: -93vh;
+            height: 100vh;
+            transition: 1s;
+            opacity: 1;
+            z-index: 0;
+        }
+
+        header{
+            width: 100%;
+            height: 7vh;
+            background-color: rgb(114, 175, 175);
+            position: sticky;
+            top: 0%;
+            left: 0%;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            my name is vivek parashar what can i do for you i am fine here
+        </header>
+        <div id="navbar">
+            <ul>
+                <li>vivek</li>
+                <li>vivek</li>
+                <li>vivek</li>
+                <li>vivek</li>
+            </ul>
+        </div>
+    
+        <div id="menubtn">
+            <i class="fa fa-bars" aria-hidden="true" id="menu"></i>
+        </div>
+    </div>
+
+
+    <!-- <script language="javascript">
+        setTimeout(function(){
+           window.location.reload(1);
+        }, 30000);
+    </script> -->
+
+    <script>
+        let navbar = document.getElementById("navbar");
+        let menubtn = document.getElementById("menubtn");
+        let menu = document.getElementById("menu");
+
+        menubtn.onclick = function(){
+               if(navbar.style.top == "-93vh")
+               {
+                   navbar.style.top = "7vh";
+                   menu.className = "fa fa-times";
+                  
+               }else{
+                   navbar.style.top = "-93vh";
+                   menu.className="fa fa-bars";
+
+               } 
+        }
+    </script>
+</body>
+</html>

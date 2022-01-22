@@ -7,31 +7,60 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <div class="child11">
-            <div class="grandchild11">
-                <ul class="this" id="this">
-                    <li class="yes">1111111</li>
-                    <li class="yes1" id="yes1">2222222222</li>
-                    <li class="yes">3333333333</li>
-                    <li class="yes">4444444444</li>
-                </ul>
-            </div>
-            <div class="grandchild22"></div>
-            <div class="grandchild33"></div>
-        </div>
-        <div class="child22"></div>
-        <div class="child33"></div>
-        <div class="child44"></div>
-        <div class="child55"></div>
-    </div>
+    <div class="container"></div>
+    <a href="www.vivearashartkd@gmail.com"></a>
+    <a href="www.vivekparashaparashartkd@gmail.com"></a>
+    <a href="www.vivekparashartkd@gmail.com"></a>
+    <a href="www.vivepashatkd@gmail.com"></a>
+    <a href="www.vekparashartkd@gmail.com"></a>
+    <a href="www.vivekparahartkd@gmail.com"></a>
+    <a href="www.vivekrashartkd@gmail.com"></a>
 
+    <script>
+        let a = document.links;
+        console.log(a);
+        let b = "vivek";
 
+        Array.from(a).forEach(function(element)
+        {
+            let href = element.href;
+            if(href.includes(b))
+            {
+                console.log(href);
+            }
+        });
 
+        let new_element = document.createElement("h1");
+        let new_element2 = document.createElement("a");
+        let text = document.createTextNode("Go to a code with harry"); 
 
+        new_element.appendChild(text);
+        
+        new_element2.appendChild(new_element);
+        new_element2.setAttribute("href", "codewithharry");
+        new_element2.className = "vivek";
+        console.log(new_element);
 
+        let new_container_element = document.querySelector(".container");
 
-    <script src="first.js"></script>
-    
+        new_container_element.appendChild(new_element2);
+
+        localStorage.setItem("name", "vivek");
+        localStorage.setItem("surname", "parashar");
+        localStorage.setItem("f.name", "laxmikant");
+        localStorage.setItem("m.name", "sunita");
+
+        // localStorage.clear();
+        // localStorage.removeItem("name");
+
+        let x = localStorage.getItem( "surname");
+
+        console.log(x);
+
+        
+
+        
+
+    </script>
 </body>
 </html>

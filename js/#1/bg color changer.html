@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .child1{
+            background-color: rgb(62, 62, 163);
+            width: 50px;
+            height: 50px;
+        }
+        .child2{
+            background-color: rgb(62, 163, 70);
+            width: 50px;
+            height: 50px;
+        }
+        .child3{
+            background-color: rgb(163, 62, 117);
+            width: 50px;
+            height: 50px;
+        }
+        .child4{
+            background-color: rgb(26, 204, 235);
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body  >
+    <div class="container" id="body" style="width: 100vw; height: 100vh;">
+        <h1 id="vivek">my name is vivek</h1>
+        <div class="child">
+            
+        </div>
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <div class="child3"></div>
+        <div class="child4"></div>
+    </div>
+
+    <script>
+        document.querySelector('.child1').addEventListener('click', function(x)
+        {
+            document.body.style.backgroundColor = ` rgb(62, 62, 163) `;
+        });
+
+        document.querySelector('.child2').addEventListener('click', function(x)
+        {
+            document.body.style.backgroundColor = `rgb(62, 163, 70) `;
+        });
+
+document.querySelector('.child3').addEventListener('click', function(x)
+        {
+            document.body.style.backgroundColor = ` rgb(163, 62, 117) `;
+       });
+
+document.querySelector('.child4').addEventListener('click', function(x)
+        {
+            document.body.style.backgroundColor = ` rgb(26, 204, 235) `;
+        });
+
+    </script>
+    
+</body>
+</html>

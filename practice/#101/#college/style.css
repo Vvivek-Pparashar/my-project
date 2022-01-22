@@ -11,6 +11,7 @@
    background-image:linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("https://www.cleanenergyministerial.org/sites/default/files/2018-05/2269_057D.jpg");
    background-repeat: no-repeat;
    background-size: cover;
+   /* background-attachment:fixed; */
    width: 100%;
    height: 100vh;
 }
