@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto,Arial,sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 90vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#E6E6E6;
+}
+
+.in-container{
+    height:500px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 7px 7px 7px 0 rgba(0, 0, 0, 0.3);
+    
+}
+
+.container-certificate-image img{
+    width: 279px;
+    height: 504px;
+    padding-top: 4px;
+}
+
+
+.container-log-in{
+    width: 450px;
+    height: 500px;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: relative;
+}
+
+.container-log-in img{
+    width: 130px;
+}
+
+.container-log-in h1{
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-top: 2.7rem;
+    margin-bottom: 4rem;
+    font-family: Google Sans,Arial,sans-serif;
+}
+
+.container-log-in input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    padding: 22px 10px;
+    border-bottom: 1px solid  rgba(0,0,0,.38);
+    margin-bottom: 7px;
+    font-size: 17px;
+    background-color: white;
+}
+
+.container-log-in p{
+    color: rgba(0, 0, 0, 0.63);
+    font-size: 12px;
+    margin-bottom: 32px
+}
+
+.container-log-in button{
+    padding: 10px 60px;
+    display: inline;
+    position: absolute;
+    bottom: 148px;
+    right: 40px;
+    background: #c3c3c3;
+    border: 1px;
+}
+
+footer{
+    background-color: white;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+footer h1{
+    color: rgb(95, 95, 241);
+    font-size: 20px;
+    font-family: Roboto,Arial,sans-serif;
+}
+
+footer span{
+    color: #7A06AB;
+    font-size: 22px;
+    font-family: Roboto,Arial,sans-serif;
+    font-weight: 100;
+}
+
+footer ul{
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    
+}
+
+footer ul li{
+    list-style: none;
+    margin-right: 30px;
+}
+
+footer ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+footer ul li a:hover{
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 900px){
+    .container{
+        display: flex;
+    }
+
+    .in-container{
+        height:50vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;     
+    }
+
+    .container-certificate-image{
+        height: 50vw;
+    }
+
+    .container-certificate-image img{
+        width: 30vw;
+        height: 50vw;
+        padding:  0;
+    }
+    
+    
+    .container-log-in{
+        width: 50vw;
+        height: 50vw;
+        padding: 3vw;
+    }
+    
+    .container-log-in img{
+        width: 20vw;
+    }
+    
+    .container-log-in h1{
+        font-size: 3vw;
+        margin-top: 3vw;
+        margin-bottom: 5vw;
+    }
+    
+    .container-log-in input{
+        width: 100%;
+        height: 5vw ;
+        padding: 0 1vw;
+        margin-bottom: 1vw;
+        font-size: 2vw;
+    }
+    
+    .container-log-in p{
+        font-size: 1.5vw;
+        margin-bottom: 32px
+    }
+    
+    .container-log-in button{
+        padding: 1vw 5vw;
+        position: absolute;
+        bottom: 7vw;
+        right: 3vw;
+        border: 1px;
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 600px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 10vh;
+        justify-content: space-around;
+    }
+
+    footer ul{
+        height: 3vh;
+    }
+}

@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto,Arial,sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#222222;
+}
+
+.container-certificate-image img{
+    width: 279px;
+    height: 504px;
+    padding-top: 4px;
+}
+
+
+.container-log-in{
+    width: 450px;
+    height: 500px;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f7f7;
+    position: relative;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 2px 1px -1px rgb(0 0 0 / 12%);
+}
+
+.container-log-in img{
+    width: 130px;
+}
+
+.container-log-in h1{
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-top: 2.7rem;
+    margin-bottom: 4rem;
+    font-family: Google Sans,Arial,sans-serif;
+}
+
+.container-log-in input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    padding: 22px 10px;
+    border-bottom: 1px solid  rgba(0,0,0,.38);
+    margin-bottom: 7px;
+    font-size: 17px;
+    background-color: #f9f7f7;
+}
+
+.container-log-in p{
+    color: rgba(0, 0, 0, 0.63);
+    font-size: 12px;
+    margin-bottom: 32px
+}
+
+.container-log-in button{
+    width: 150px;
+    padding: 10px 20px;
+    display: inline;
+    position: absolute;
+    bottom: 148px;
+    right: 40px;
+    background: #c3c3c3;
+    border: 1px;
+}
+
+@media screen and (max-width: 700px)
+{
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-certificate-image img{
+        width: 60vw;
+        height: 250px;
+        padding-top: 4px;
+    }
+    
+    
+    .container-log-in{
+        width: 60vw;
+        height: 200px;
+        padding: 40px 40px;
+    }
+    
+    .container-log-in img{
+        width: 50px;
+    }
+    
+    .container-log-in h1{
+        font-size: 10px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    .container-log-in input{
+        width: 100%;
+        height: 30px;
+        padding: 0 0;
+        margin-bottom: 7px;
+        font-size: 10px;
+    }
+    
+    .container-log-in p{
+        font-size: 7px;
+        margin-bottom: 32px
+    }
+    
+    .container-log-in button{
+        width: 50px;
+        padding: 0 0;
+        position: absolute;
+        bottom: 20px;
+        right: 40px;
+        border: 1px;
+    }
+    
+}

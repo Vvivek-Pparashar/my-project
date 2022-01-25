@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto,Arial,sans-serif;
+    color: rgba(0,0,0,.54);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 9%;
+    background-color: #FFFFFF;
+    padding: 0 50px;
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+header img{
+    width: 194px;
+}
+
+.cont-mid-certificate{
+    width: 100%;
+    height: 73.5%;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.certificate{
+    width: 580px;
+    height: 227px;
+    box-shadow: 6px 7px 9px 0px rgba(0, 0 ,0 ,0.3);
+}
+
+.certificate-1{
+    width: 100%;
+    background-color: #3F51B5;
+    height: 82px;
+    padding: 0 25px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.certificate-1-text h1{
+    font-size: 17px;
+    color: white;
+    font-weight: 100;
+}
+
+.certificate-1-text p{
+    font-size: 15px;
+    color: white;
+}
+
+.certificate-1 img{
+    width: 50px;
+    margin-right: 10px;
+}
+
+.certificate-2{
+    width: 100%;
+    background-color: white;
+    height: 145px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.certificate-2 p{
+    color: black;
+    margin-top: 36px;
+}
+
+.certificate-2 button{
+    position: absolute;
+    bottom: 22px;
+    right: 30px;
+    padding: 7px 20px;
+}
+
+
+@media screen and (max-width: 700px) {
+    header{
+        padding: 0 5vw;
+    }
+
+    header img{
+        width: 180px;
+    }
+    
+    .certificate{
+        width: 90vw;
+        height: 180px;
+        margin: auto;
+        background-color: #7A06AB;
+    }
+    
+    .certificate-1{
+        height: 70px;
+        padding: 0 10px;
+    }
+
+    .certificate-1-text h1{
+        font-size: 15px;
+        font-weight: 100;
+    }
+    
+    .certificate-1-text p{
+        font-size: 13px;
+    }
+
+    .certificate-2{
+        height: 110px;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    
+    .certificate-2 p{
+        font-size: 2.5vw;
+        margin-top: 25px;
+    }
+    
+    .certificate-2 button{
+        position: absolute;
+        bottom: 15px;
+        right: 26px;
+        padding: 3px 14px;
+    }
+    
+}
+
+.grow-with-360{
+    width: 100%;
+    height: 9%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    align-items: center;
+}
+
+.grow-with-360 h1{
+    color: rgb(95, 95, 241);
+    font-size: 20px;
+    font-family: Roboto,Arial,sans-serif;
+}
+
+.grow-with-360 span{
+    color: #7A06AB;
+    font-size: 22px;
+    font-family: Roboto,Arial,sans-serif;
+    font-weight: 100;
+}
+
+.grow-with-360 ul{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+li a{
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+li a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 700px) {
+    .grow-with-360{
+        display: flex;
+        height: 12%;
+        flex-direction: column;
+        padding:0 5vw;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    .grow-with-360 h1{
+        font-size: 17px;
+        margin-bottom: 5px;
+    }
+    
+    .grow-with-360 span{
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    ul li{
+        list-style: none;
+        margin-right: 20px;
+        margin-left: 0;
+    }
+
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 8%;
+    padding: 0 50px;
+    background-color: white
+}
+
+@media screen and (max-width: 700px) {
+    footer{
+        padding: 0 5vw;
+    }
+}
+
+footer p{
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.social-media{
+    display: flex;
+    align-items: center;
+}
+
+#twitter{
+    font-size: 21px;
+    margin-left: 15px;
+    color:  #00acee;
+}
+
+#linkedin{
+    font-size: 21px;
+    margin-left: 15px;
+    color: #0e76a8; 
+}
+
+#facebook{
+    font-size: 21px;
+    margin-left: 15px;
+    color:  #4267B2;
+}
