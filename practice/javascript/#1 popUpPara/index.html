@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .open,
+      .close {
+        border: none;
+        background: #47a386;
+        padding: 15px;
+        color: white;
+        font-size: 15px;
+        outline: none;
+        cursor: pointer;
+        border-radius: 5px;
+        outline: none;
+      }
+
+      .modal-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.35);
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.2s ease-in-out;
+      }
+
+      .modal {
+        background-color: white;
+        border-radius: 6px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+        padding: 30px 50px;
+        width: 500px;
+      }
+      .modal h1,
+      .modal p {
+        margin-bottom: 17px;
+      }
+
+      .show{
+          opacity: 1;
+          pointer-events: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="open">Click to find more</button>
+
+    <section class="modal-container" id="modal-container">
+      <div class="modal">
+        <h1>Tiger</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
+          doloremque totam dolores assumenda aliquid, magnam molestiae iusto
+          omnis, beatae saepe delectus optio! Porro facere, molestias at
+          voluptas accusamus quidem ad!
+        </p>
+
+        <button class="close">close the tab--></button>
+      </div>
+    </section>
+    <script>
+        const open1 = document.querySelector(".open");
+        const close1 = document.querySelector(".close");
+
+        open1.addEventListener('click', function(){
+            // const modal = document.querySelector('.modal-container');
+            // modal.classList.add("show");
+            
+            let modal = document.getElementById('modal-container');
+            modal.style.opacity = `1`;
+            modal.style.pointerEvents = `auto`;
+        })
+
+
+        close1.addEventListener('click', function(){
+
+            // const modal = document.querySelector('.modal-container');
+            // modal.classList.remove("show");
+
+            let modal = document.getElementById('modal-container');
+            modal.style.opacity = `0`;
+            modal.style.pointerEvents = `none`;
+             
+        })
+        
+    </script>
+  </body>
+</html>

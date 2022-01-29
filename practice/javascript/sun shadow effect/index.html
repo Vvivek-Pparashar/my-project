@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .first{
+            width: 30vw;
+            height: 20vw;
+            background-color: #378cbd;
+            color: rgb(12, 12, 12);
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="first" id="first">
+            <p>my name is vivek parashar what can i do for you i.....</p>
+        </div>
+    </div>
+    <script>
+        let container = document.querySelector("container");
+        // let first = document.querySelector('first');
+        // container.addEventListener('mousemove', function(e){
+        //       first.style.boxshadow = ` 10px, 5px solid black`;
+        // })
+
+        document.getElementById("container").addEventListener('mousemove', function(e) {
+            let variable = e.clientX;
+            // console.log(variable);
+            // console.log(e.clientY);
+
+            variable = (670 - variable)/50;
+            let variable2 =(321-e.clientY)/25;
+
+            let first = document.getElementById("first");
+            first.style.boxShadow = ` ${variable}px ${variable2}px 10px 3px rgba(0, 0, 0, 0.6) `;
+        })
+    </script>
+</body>
+</html>

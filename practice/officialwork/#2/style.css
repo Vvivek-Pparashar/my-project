@@ -30,7 +30,7 @@ header img{
 
 .cont-mid-certificate{
     width: 100%;
-    height: 73.5%;
+    height: 81.5%;
     background-color: #F5F5F5;
     display: flex;
     justify-content: center;
@@ -100,6 +100,10 @@ header img{
 
     header img{
         width: 180px;
+    }
+    
+    .cont-mid-certificate {
+        height: 83.5;
     }
     
     .certificate{
@@ -192,7 +196,7 @@ li a:hover{
 @media screen and (max-width: 700px) {
     .grow-with-360{
         display: flex;
-        height: 12%;
+        height: 10%;
         flex-direction: column;
         padding:0 5vw;
         justify-content: center;
@@ -200,13 +204,17 @@ li a:hover{
     }
 
     .grow-with-360 h1{
-        font-size: 17px;
+        font-size: 13px;
         margin-bottom: 5px;
     }
     
     .grow-with-360 span{
-        font-size: 17px;
+        font-size: 12px;
         font-weight: 600;
+    }
+
+    .grow-with-360 a{
+        font-size: 11px;
     }
 
     ul li{
@@ -215,47 +223,4 @@ li a:hover{
         margin-left: 0;
     }
 
-}
-
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    height: 8%;
-    padding: 0 50px;
-    background-color: white
-}
-
-@media screen and (max-width: 700px) {
-    footer{
-        padding: 0 5vw;
-    }
-}
-
-footer p{
-    font-size: 13px;
-    font-weight: 600;
-}
-
-.social-media{
-    display: flex;
-    align-items: center;
-}
-
-#twitter{
-    font-size: 21px;
-    margin-left: 15px;
-    color:  #00acee;
-}
-
-#linkedin{
-    font-size: 21px;
-    margin-left: 15px;
-    color: #0e76a8; 
-}
-
-#facebook{
-    font-size: 21px;
-    margin-left: 15px;
-    color:  #4267B2;
 }

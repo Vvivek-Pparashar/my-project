@@ -3,11 +3,30 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto,Arial,sans-serif;
+    /* overflow-x: hidden; */
+}
+
+header{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 9vh;
+    background-color: #FFFFFF;
+    padding: 0 50px;
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+header img{
+    width: 194px;
 }
 
 .container{
     width: 100vw;
-    height: 90vh; 
+    height: 80vh; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,29 +34,33 @@
 }
 
 .in-container{
-    height:500px ;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 7px 7px 7px 0 rgba(0, 0, 0, 0.3);
-    
+}
+
+.container-certificate-image{
+    height: 100%;
 }
 
 .container-certificate-image img{
-    width: 279px;
-    height: 504px;
-    padding-top: 4px;
+    width: 240px;
+    height: 100%;
 }
 
 
 .container-log-in{
     width: 450px;
-    height: 500px;
-    padding: 40px 40px;
+    height: 60vh;
+    padding: 2vh 2.8vw;
     display: flex;
     flex-direction: column;
     background-color: white;
     position: relative;
+    /* overflow: hidden; */
+    z-index: 0;
 }
 
 .container-log-in img{
@@ -47,8 +70,8 @@
 .container-log-in h1{
     font-size: 1.5rem;
     font-weight: 100;
-    margin-top: 2.7rem;
-    margin-bottom: 4rem;
+    margin-top: 4vh;
+    margin-bottom: 6vh;
     font-family: Google Sans,Arial,sans-serif;
 }
 
@@ -56,9 +79,9 @@
     width: 100%;
     height: 30px;
     border: none;
-    padding: 22px 10px;
+    padding: 2vh 10px;
     border-bottom: 1px solid  rgba(0,0,0,.38);
-    margin-bottom: 7px;
+    margin-bottom: 1vh;
     font-size: 17px;
     background-color: white;
 }
@@ -66,15 +89,16 @@
 .container-log-in p{
     color: rgba(0, 0, 0, 0.63);
     font-size: 12px;
-    margin-bottom: 32px
+    margin-bottom: 4vh;
+}
+
+.button-out{
+    display: flex;
+    justify-content: right;
 }
 
 .container-log-in button{
-    padding: 10px 60px;
-    display: inline;
-    position: absolute;
-    bottom: 148px;
-    right: 40px;
+    padding: 2vh 60px;
     background: #c3c3c3;
     border: 1px;
 }
@@ -85,6 +109,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 12;
     
 }
 
@@ -123,9 +148,20 @@ footer ul li a:hover{
 }
 
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 800px){
+
+    header{
+        padding: 0 20px;
+        height: 9vh;
+    }
+
+    header img{
+        width: 30vw;
+    }
+
     .container{
         display: flex;
+        height: 84vh;
     }
 
     .in-container{
@@ -136,28 +172,27 @@ footer ul li a:hover{
     }
 
     .container-certificate-image{
-        height: 50vw;
+        height: 0;
     }
 
     .container-certificate-image img{
-        width: 30vw;
-        height: 50vw;
-        padding:  0;
+        width: 0;
+        height: 0;
     }
     
     
     .container-log-in{
-        width: 50vw;
+        width: 80vw;
         height: 50vw;
         padding: 3vw;
     }
     
     .container-log-in img{
-        width: 20vw;
+        width: 25vw;
     }
     
     .container-log-in h1{
-        font-size: 3vw;
+        font-size: 4.2vw;
         margin-top: 3vw;
         margin-bottom: 5vw;
     }
@@ -171,7 +206,7 @@ footer ul li a:hover{
     }
     
     .container-log-in p{
-        font-size: 1.5vw;
+        font-size: 2.3vw;
         margin-bottom: 32px
     }
     
@@ -181,7 +216,11 @@ footer ul li a:hover{
         bottom: 7vw;
         right: 3vw;
         border: 1px;
-        font-size: 2vw;
+        font-size: 2.3vw;
+    }
+
+    #last{
+        margin-right: 0px;
     }
 }
 
@@ -189,11 +228,28 @@ footer ul li a:hover{
     footer{
         display: flex;
         flex-direction: column;
-        height: 10vh;
+        height: 6vh;
         justify-content: space-around;
+        position: fixed;
+        bottom: 0;
+        left: 0%;
+        right: 0;
+        z-index: 12;
     }
 
     footer ul{
         height: 3vh;
+    }
+
+    footer h1{
+        font-size: 4vw;
+    }
+
+    footer span{
+        font-size: 4vw;
+    }
+
+    footer a{
+        font-size: 2vw;
     }
 }

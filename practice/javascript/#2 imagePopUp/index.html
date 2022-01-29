@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      }
+
+      .img-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        cursor: pointer;
+      }
+
+      .modal {
+        background-color: rgba(53, 194, 18, 0.384);
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .full-img {
+        position: absolute;
+        height: 85%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.5);
+        transition: all 0.3s ease-in-out;
+      }
+
+      /* Dynamic Classes */
+      .full-img.open {
+        transform: translate(-50%, -50%) scale(1);
+      }
+
+      .modal.open {
+        opacity: 1;
+        pointer-events: all;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="gallery">
+      <!-- Image 1 -->
+      <div class="img-container">
+        <img src="img/small/pexels-anna-shvets-4588065.jpg" alt="1" />
+      </div>
+
+      <!-- Image 2 -->
+      <div class="img-container">
+        <img src="img/small/pexels-anthony-139639.jpg" alt="2" />
+      </div>
+
+      <!-- Image 3 -->
+      <div class="img-container">
+        <img src="img/small/pexels-burst-374825.jpg" alt="3" />
+      </div>
+
+      <!-- Image 4 -->
+      <div class="img-container">
+        <img src="img/small/pexels-carlos-spitzer-17811.jpg" alt="4" />
+      </div>
+
+      <!-- Image 5 -->
+      <div class="img-container">
+        <img src="img/small/pexels-charles-1851164.jpg" alt="5" />
+      </div>
+
+      <!-- Image 6 -->
+      <div class="img-container">
+        <img src="img/small/pexels-frans-van-heerden-631292.jpg" alt="6" />
+      </div>
+
+      <!-- Image 7 -->
+      <div class="img-container">
+        <img src="img/small/pexels-gratisography-4602.jpg" alt="7" />
+      </div>
+
+      <!-- Image 8 -->
+      <div class="img-container">
+        <img src="img/small/pexels-jan-kopřiva-3614358.jpg" alt="8" />
+      </div>
+
+      <!-- Image 9 -->
+      <div class="img-container">
+        <img src="img/small/pexels-jeremy-bishop-2422915.jpg" alt="9" />
+      </div>
+      <!-- Image 10 -->
+      <div class="img-container">
+        <img src="img/small/pexels-jim-long-949859.jpg" alt="10" />
+      </div>
+    </section>
+    <div class="modal" id="modal">
+      <img src="img/full/1.jpg" alt="" class="full-img" />
+    </div>
+
+    <script>
+      const ele = document.querySelectorAll(".gallery img");
+      const modal = document.querySelector(".modal");
+      const fullImg = document.querySelector(".full-img");
+
+      ele.forEach(function (img) {
+        img.addEventListener("click", function () {
+          const alt = img.getAttribute("alt");
+          fullImg.src = `img/full/${alt}.jpg`;
+
+          modal.classList.add("open");
+          fullImg.classList.add("open");
+        });
+      });
+
+      modal.addEventListener("click", function (x) {
+        if (x.target.classList.contains("modal")) {
+          modal.classList.remove("open");
+          fullImg.classList.remove("open");
+        }
+      });
+
+      // An object with some properties
+      var person = { name: "Harry", language: "JavaScript", age: 20 };
+      // Loop through all the properties in the object
+      for (var i in person) {
+        console.log(i + " = " + person[i]);
+      }
+    </script>
+  </body>
+</html>
