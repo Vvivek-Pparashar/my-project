@@ -20,8 +20,8 @@
         }
 
         .first{
-            width: 30vw;
-            height: 20vw;
+            width: 50vw;
+            height: 20vh;
             background-color: #378cbd;
             color: rgb(12, 12, 12);
         }
@@ -48,12 +48,13 @@
             // console.log(variable);
             // console.log(e.clientY);
 
-            variable = (670 - variable)/50;
-            let variable2 =(321-e.clientY)/25;
+            variable = (window.innerWidth/2 - e.clientX)/100;
+            let variable2 =(window.innerHeight/2 - e.clientY)/50;
 
             let first = document.getElementById("first");
             first.style.boxShadow = ` ${variable}px ${variable2}px 10px 3px rgba(0, 0, 0, 0.6) `;
         })
+
     </script>
 </body>
 </html>

@@ -112,33 +112,27 @@
     </div>
 
     <script>
-      const ele = document.querySelectorAll(".gallery img");
-      const modal = document.querySelector(".modal");
+      "use strict";
+      const image = document.querySelectorAll(".gallery img");
       const fullImg = document.querySelector(".full-img");
 
-      ele.forEach(function (img) {
-        img.addEventListener("click", function () {
-          const alt = img.getAttribute("alt");
-          fullImg.src = `img/full/${alt}.jpg`;
+      image.forEach(function(x){
+        x.addEventListener("click", function(){
+          const value = x.getAttribute("alt");
+          console.log(value);
+          fullImg.setAttribute("src", `img/full/${value}.jpg`);
 
           modal.classList.add("open");
           fullImg.classList.add("open");
-        });
-      });
+        })
+      })
 
       modal.addEventListener("click", function (x) {
         if (x.target.classList.contains("modal")) {
           modal.classList.remove("open");
           fullImg.classList.remove("open");
         }
-      });
-
-      // An object with some properties
-      var person = { name: "Harry", language: "JavaScript", age: 20 };
-      // Loop through all the properties in the object
-      for (var i in person) {
-        console.log(i + " = " + person[i]);
-      }
+      }); 
     </script>
   </body>
 </html>
