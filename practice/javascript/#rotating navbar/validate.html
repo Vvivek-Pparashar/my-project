@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- CSS dependencies -->
+    <title>Intern360 | Internship & Experience Certificate Validation</title>
+
+    <!-- FAVICONS -->
+    <link
+      rel="shortcut icon"
+      href="https://www.makes360.com/images/favicon/favicon.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://www.makes360.com/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="https://www.makes360.com/images/favicon/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="https://www.makes360.com/images/favicon/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="icon"
+      sizes="192x192"
+      href="https://www.makes360.com/images/favicon/icon-192x192.png"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Roboto, Arial, sans-serif;
+        color: rgba(0, 0, 0, 0.54);
+      }
+
+      .container {
+        width: 100%;
+        height: 100vh;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 9vh;
+        min-height: 50px;
+        background-color: #ffffff;
+        padding: 0 50px;
+        position: sticky;
+        top: 0%;
+        left: 0%;
+        box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
+        z-index: 10;
+        overflow: hidden;
+      }
+
+      header img {
+        width: 194px;
+        cursor: pointer;
+      }
+
+      header button {
+        padding: 10px 10px;
+        color: white;
+        background-color: #2266e1;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+      }
+
+      .cont-mid-certificate {
+        width: 100%;
+        height: 81.5%;
+        min-height: 400px;
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .certificate {
+        width: 580px;
+        height: 227px;
+        box-shadow: 6px 7px 9px 0px rgba(0, 0, 0, 0.3);
+      }
+
+      .certificate-1 {
+        width: 100%;
+        background-color: #3f51b5;
+        height: 82px;
+        padding: 0 25px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+      }
+
+      .certificate-1-text h1 {
+        font-size: 17px;
+        color: white;
+        font-weight: 100;
+      }
+
+      .certificate-1-text p {
+        font-size: 15px;
+        color: white;
+      }
+
+      .certificate-1 img {
+        width: 50px;
+        margin-right: 10px;
+      }
+
+      .certificate-2 {
+        width: 100%;
+        background-color: white;
+        height: 145px;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+      }
+
+      .certificate-2 p {
+        color: black;
+        margin-top: 36px;
+      }
+
+      .certificate-2 button {
+        position: absolute;
+        bottom: 22px;
+        right: 30px;
+        padding: 7px 20px;
+      }
+
+      footer {
+        background-color: white;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      footer ul {
+        display: flex;
+        height: 9vh;
+        align-items: center;
+      }
+
+      footer ul li {
+        list-style: none;
+        margin-right: 30px;
+      }
+
+      footer ul li a {
+        color: black;
+        font-size: 15px;
+        text-decoration: none;
+      }
+
+      footer ul li a:hover {
+        text-decoration: underline;
+      }
+
+      b {
+        font-size: 13px;
+        color: rgb(51, 50, 50);
+      }
+
+      @media screen and (max-width: 800px) {
+        header {
+          padding: 0 20px;
+          height: 9vh;
+        }
+
+        header img {
+          width: 33vw;
+        }
+
+        #last {
+          margin-right: 0px;
+        }
+      }
+
+      @media screen and (max-width: 700px) {
+        .cont-mid-certificate {
+          height: 83.5;
+        }
+
+        .certificate {
+          width: 90vw;
+          height: 180px;
+          margin: auto;
+          background-color: #7a06ab;
+        }
+
+        .certificate-1 {
+          height: 70px;
+          padding: 0 10px;
+        }
+
+        .certificate-1-text h1 {
+          font-size: 15px;
+          font-weight: 100;
+        }
+
+        .certificate-1-text p {
+          font-size: 13px;
+        }
+
+        .certificate-2 {
+          height: 110px;
+          padding: 0 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+        }
+
+        .certificate-2 p {
+          font-size: 2.5vw;
+          margin-top: 25px;
+        }
+
+        .certificate-2 button {
+          position: absolute;
+          bottom: 15px;
+          right: 26px;
+          padding: 3px 14px;
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+        header button {
+          padding: 8px;
+          font-size: 2.3vw;
+        }
+
+        b {
+          font-size: 11px;
+          color: rgb(51, 50, 50);
+        }
+
+        .certificate-2 p {
+          font-size: 3vw;
+          margin-top: 25px;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        header button {
+          padding: 8px;
+          font-size: 2.2vw;
+        }
+        footer {
+          display: flex;
+          flex-direction: column;
+          height: 6vh;
+          min-height: 70px;
+          justify-content: space-around;
+          align-items: center;
+        }
+
+        footer ul {
+          height: 3vh;
+        }
+
+        footer h1 {
+          font-size: 4vw;
+        }
+
+        footer span {
+          font-size: 4vw;
+        }
+
+        footer ul li a {
+          font-size: 3vw;
+          text-decoration: none;
+        }
+      }
+
+      @media screen and (max-width: 700px) {
+        header button {
+          padding: 8px;
+          font-size: 2vw;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <a href="https://internship.makes360.com/">
+          <img
+            src="https://www.makes360.com/images/makes360.png"
+            alt="makes360-image"
+        /></a>
+
+        <a href="https://internship.makes360.com/"
+          ><button>Back To HomePage</button></a
+        >
+      </header>
+      <div class="cont-mid-certificate">
+        <div class="certificate">
+          <div class="certificate-1">
+            <img
+              src="https://learndigital.withgoogle.com/static/img/certification/certification-complete.svg"
+              alt="error"
+            />
+            <div class="certificate-1-text">
+              <h1>Valid certificate</h1>
+              <p>Certificate ID: QPBG98GCP</p>
+            </div>
+          </div>
+          <div class="certificate-2">
+            <p>
+              Anish Kumar successfully completed the Fundamentals of digital
+              marketing certification on 22/12/2019, 12:47
+            </p>
+            <button>Download</button>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <ul>
+          <li><a href="#">Policy</a></li>
+          <li><a href="#">Faq</a></li>
+          <li id="last"><a href="#">Contact</a></li>
+        </ul>
+        <b>copywrite &copy; makes360</b>
+      </footer>
+    </div>
+  </body>
+</html>

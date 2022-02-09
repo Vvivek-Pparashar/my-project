@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="progress">
+            <div class="progress-line" id="progress"></div>
+            <div class="circle active">1</div>
+            <div class="circle">2</div>
+            <div class="circle">3</div>
+            <div class="circle">4</div>
+        </div>
+
+        <button class="btn" id="prev" disabled>Previous</button>
+        <button class="btn" id="next">next</button>
+    </div>
+    
+    <script>
+        const prev = document.getElementById("prev");
+        const next = document.getElementById("next");
+        const progress = document.getElementById("progress");
+        const circles = document.querySelectorAll(".circle");
+
+        let currentCircle = 1;
+
+        next.addEventListener("click", ()=>{
+            currentCircle++;
+            if(currentCircle >4) currentCircle = 4; 
+
+            update();
+        });
+
+        prev.addEventListener("click", ()=>{
+            currentCircle--;
+            if(currentCircle < 1) currentCircle = 1;
+        
+            update();
+            
+        });
+
+        function update(){
+            circles.forEach((circle, index12) =>{
+                if(index12 < currentCircle) circle.classList.add("active")
+                else circle.classList.remove("active");
+            });
+
+            const active = document.querySelectorAll(".active");
+            progress.style.width = ((active.length-1)/3)*100 + '%';
+
+            if(currentCircle === 1) prev.disabled = true;
+            else if(currentCircle === 4) next.disabled = true;
+            else{
+                prev.disabled = false;
+                next.disabled = false;
+            }
+        };
+    </script>
+</body>
+</html>

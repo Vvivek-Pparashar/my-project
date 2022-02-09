@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .bg{
+            background-image: url("https://images.unsplash.com/photo-1644308251427-cd809dc65e4c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+            filter: blur(10px);
+        }
+
+        .text{
+            font-size: 50px;
+            color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <section class="bg" id="bg"></section> 
+    <div class="text">0%</div>
+    
+    <script>
+        const text = document.querySelector(".text");
+        const bg = document.getElementById("bg");
+
+        let load = 0;
+        let int = setInterval(blurring, 30);
+
+        function blurring(){
+            load++;
+
+            if(load > 99){
+                clearInterval(int);
+                bg.style.filter = "blur(0px)"
+            }else{
+                text.innerHTML = `${load}%`;
+                let blur = 10 - (load/10);
+                bg.style.filter = `blur(${blur}px)`;
+            }
+
+            text.style.opacity = `${1 - load/100}`
+
+        }
+    </script>
+</body>
+</html>

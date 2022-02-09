@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body{
+         background-color: #333;
+         color: #222;
+        overflow-x: hidden;
+      }
+
+      .container{
+          background-color: #fafafa;
+          transform-origin: top left;    
+          transition: transform 0.4s linear;
+          width: 100vw;
+          min-height: 100vh;
+          padding: 50px;
+      }
+
+      .circle-container{
+          position: fixed;
+          top: -100px;
+          left: -100px;
+          
+          
+      }
+
+      .circle{
+        background-color: brown;
+        position: relative;
+        width: 200px;
+        height: 200px ;
+        border-radius: 50%;
+        transition: transform 0.4s linear;
+
+      }
+
+      button{
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          height: 100px;
+          border: none;
+          background: transparent;
+          font-size: 26px;
+          color: white;
+      }
+
+      button:focus{
+          outline: none;
+      }
+
+      #open{
+          left: 60%;
+      }
+
+      #close{
+          top: 60%;
+          transform: rotate(90deg);
+          transform-origin: top left;
+      }
+
+      img{
+          max-width: 100%;
+      }
+
+      .container{
+          /* max-width: 1000px; */
+          margin: 0px auto;
+      }
+
+      .container.show-nav + nav li{
+          transform: translateX(0);
+          transition-delay:0.3s ;
+      }
+
+      .container.show-nav .circle{
+          transform: rotate(-70deg);
+      }
+
+      h1{
+          margin: 0;
+      }
+      small{
+          color: #555;
+      }
+
+      nav{
+          position: fixed;
+          bottom: 40px;
+          left: 0%;
+          z-index: 10000;
+      }
+
+      ul{
+          list-style-type: none;
+          padding-left: 30px;
+      }
+
+      li{
+          text-transform: uppercase;
+          color: white;
+          margin: 40px 0;
+          transform: translateX(-100%);
+          transition: transform 0.4s ease-in;
+      }
+
+      li + li{
+          margin-left: 15px;
+          transform: translateX(-150%);
+
+      }
+
+      li + li +li{
+          margin-left: 30px;
+          transform: translateX(-200%);
+
+      }
+
+      i{
+           font-size: 20px;
+           margin-right: 10px;
+      } 
+
+      .show-nav{
+          transform: rotate(-20deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="circle-container">
+            <div class="circle">
+                <button id="close"><i class="fa fa-times"></i></button>
+                <button id="open"><i class="fa fa-bars"></i></button>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Amazing Article</h1>
+            <small>dikshant</small>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dignissimos inventore aperiam, est itaque veritatis incidunt beatae ratione id magnam ducimus reiciendis quae repudiandae. Voluptas porro laboriosam, qui officiis corporis repellat veniam unde architecto aut! At eum saepe unde, veritatis consequuntur voluptatibus perferendis laboriosam quisquam! Amet iure, molestias blanditiis odit vero rem placeat eligendi fugit sequi sed et eum earum pariatur similique ipsam dolore mollitia debitis, quo necessitatibus minus incidunt nesciunt? Perspiciatis, harum! Error neque aliquid architecto culpa molestiae distinctio quia illum, cumque quas? Sunt, obcaecati incidunt voluptatum temporibus, optio inventore commodi, cum nam voluptatibus exercitationem laboriosam? Illo, esse culpa!</p>
+
+            <h1>My dog</h1>
+            <img src="https://images.unsplash.com/photo-1638913662415-8c5f79b20656?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt facilis autem provident ex, ullam dolor asperiores cumque iste qui ipsa reprehenderit tenetur. Temporibus minus odit ad soluta, ipsam itaque eum optio omnis perferendis, animi eos sint enim non id adipisci vel dolor placeat, distinctio sunt obcaecati sequi? Magnam non maiores enim? Ex, unde sunt excepturi officiis possimus voluptatibus nesciunt facilis? Error expedita corporis dolore facere perferendis cupiditate tempore laborum ea quam? Fugiat laudantium quis consequuntur.</p>
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><i class="fas fa-home"></i>Home</li>
+            <li><i class="fas fa-user-alt"></i>About</li>
+            <li><i class="fas fa-envelope"></i>Contact</li>
+        </ul>
+    </nav>
+
+
+
+      <script>
+          const open = document.querySelector("#open");
+          const close = document.querySelector("#close");
+          const container = document.querySelector(".container");
+
+          open.addEventListener("click", function(){
+            container.classList.add("show-nav");
+          })
+
+          close.addEventListener("click", () => container.classList.remove("show-nav"))
+      </script>
+    </div>
+  </body>
+</html>
