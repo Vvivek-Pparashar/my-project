@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+        // localStorage.setItem("1", "What can i do for you");
+        let key = 1;
+        let i = 0;
+        while(i <localStorage.length - 1){
+            console.log(localStorage.getItem(`${key}`));
+            i++;
+            key++;
+        }
+
+        const ages = [3, 10, 18, 20];
+        localStorage.setItem("1", "vivek");
+        localStorage.setItem("2", "vivek1");
+        localStorage.setItem("3", "vivek2");
+        localStorage.setItem("4", "vivek3");
+        localStorage.setItem("5", "vivek4");
+        localStorage.setItem("array", JSON.stringify(ages));
+
+        // localStorage.removeItem("5");
+
+        const key1 = 3;
+        console.log(JSON.parse(localStorage.getItem("array")).includes(key1));
+
+    </script>
+    
+</body>
+</html>

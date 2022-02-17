@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        h1{
+            margin-bottom: 50px;
+        }
+
+        .box{
+            width: 30vw;
+            height: 20vw;
+            margin-bottom: 30px;
+            text-align: center;
+            background-color: rgb(88, 88, 240);
+            border-radius: 20px;
+            box-shadow: 3px 5px 5px 0 rgb(88, 88, 88);
+            transform: translateX(400%);
+            transition: transform .6s linear;
+        }
+
+        .box:nth-of-type(even){
+            transform: translateX(-400%);
+        }
+
+        .box.show{
+            transform: translateX(0);
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Scroll down to see the effect</h1>
+    <div class="box">content</div>
+    <div class="box">content</div>
+    <div class="box">content</div>
+    <div class="box">content</div>
+    <div class="box">content</div>
+    <div class="box">content</div>
+    <div class="box">content</div>
+    <div class="box">content</div>
+    <div class="box">content</div>
+    <div class="box">content</div>
+    <div class="box">content</div>
+    <div class="box">content</div>
+    <div class="box">content</div>
+    <div class="box">content</div>
+    <div class="box">content</div>
+    <div class="box">content</div>
+    <div class="box">content</div>
+    <div class="box">content</div>
+    <div class="box">content</div>
+    <div class="box">content</div>
+    <div class="box">content</div>
+    <div class="box">content</div>
+    <div class="box">content</div>
+
+    <script>
+        const boxes = document.querySelectorAll(".box");
+
+        window.addEventListener("scroll", checkBoxes);
+
+checkBoxes();
+        function checkBoxes(){
+            const height = window.innerHeight/5 *4;
+            boxes.forEach((box)=>{
+                const top = box.getBoundingClientRect().top;
+                if(top<height) box.classList.add("show");
+                else box.classList.remove("show");
+            })
+        }
+    </script>
+    
+  </body>
+</html>

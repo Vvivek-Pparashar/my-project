@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body{
+        background-color: brown;
+      }
+      .container{
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+            }
+      input {
+        width: 100px;
+        padding: 10px;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid black;
+      }
+
+      .click {
+        padding: 10px;
+      }
+
+      .add {
+        width: 100%;
+        height: 60vh;
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-color: black; */
+        /* opacity:0.3; */
+      }
+
+  
+
+      .add::-moz-c {
+        display: flex;
+        align-items: center;
+      }
+
+      .text {
+        background-color: aqua;
+        text-align: center;
+        width: 500px;
+        height: 50px;
+        margin-right: 30px;
+      }
+
+      .fa {
+        font-size: 56px;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="add"></div>
+      <div class="input">
+        <input type="text" placeholder="what can i do for you" class="vivek" />
+        <button class="click">click</button>
+      </div>
+    </div>
+
+    <script>
+      const btn = document.querySelector('.click');
+      const add = document.querySelector('.add');
+      
+
+      const func = function() {
+        const input = document.querySelector('.vivek');
+        const string1 = input.value;
+        if (input.value) {
+          const divForAddition = document.createElement('div');
+          divForAddition.setAttribute('class', 'newDiv');
+
+          add.appendChild(divForAddition);
+
+          const text = document.createElement('div');
+          text.setAttribute('class', 'text');
+          text.innerHTML = string1;
+          divForAddition.appendChild(text);
+
+          const fa = document.createElement('i');
+          fa.setAttribute('class', 'fa fa-window-close');
+
+          divForAddition.appendChild(fa);
+
+          input.value = '';
+        }
+      };
+
+    
+      btn.addEventListener('click', func);
+      document.addEventListener('keydown', e =>{ if (e.key === 'Enter') func() });
+    </script>
+  </body>
+</html>
