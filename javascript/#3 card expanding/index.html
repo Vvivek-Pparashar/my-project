@@ -28,12 +28,11 @@
 
     <script>
         const panel = document.querySelectorAll(".panel");
-        let active = panel[0];
+        let activeDiv = panel[0];
         panel.forEach(function(x){
-           
             x.addEventListener("click", function(){
-                active.classList.remove("active");
-                active = x;
+                activeDiv.classList.remove("active");
+                activeDiv = x;
                 x.classList.add("active");
             });
         })

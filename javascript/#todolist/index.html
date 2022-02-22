@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>to-do list|vivekParashar|Self made</title>
+</head>
+<body>
+    <div class="container">
+        <div class="head-text">
+            <h1>Todo List</h1>
+            <i class="fa fa-plus"></i>
+        </div>
+        <div class="add-section">
+            <input type="text" placeholder="Add New Todo" class="input">
+            <button class="add-button">Add</button>
+        </div>
+        <div class="list-item"></div>
+    </div>
+    
+
+    <script>
+        const addBtn = document.querySelector(".add-button");
+        const list = document.querySelector(".list-item");
+        const input = document.querySelector('.input');
+        const deletebtn =document.querySelector(".delete-btn"); 
+        
+        // TO GET EMPTY INPUT TYPE......
+        input.value = '';
+
+
+        //LOCAL STORAGE ON REFRESH THE PAGE....
+         let key = 1;
+
+
+        // FUNCTION FOR CLICK EVENT......;
+        const addFunc = function(){ 
+            const string1 = input.value;
+           
+
+            if (input.value) {
+
+                const addThisDiv = document.createElement('div');
+                addThisDiv.setAttribute('class', `newDiv div${key}`);
+                addThisDiv.innerHTML = ` <div class = "newDiv-textArea"> <i class="fa fa-square-o"></i>
+                ${string1} </div>  <div class = "class-delete-btn"><button class = "delete-btn"  data-type = "${key}">
+                <i class="fa fa-trash"></i> </button></div>`;
+
+                 key++;
+
+                list.appendChild(addThisDiv);  
+                input.value = '';
+            }
+        };
+
+        document.addEventListener("click", function(e){
+            if(e.target.closest('delete-btn')){
+                // list.removeChild(addThisDiv);  
+                console.log("DSFSDF");
+            }
+        })
+
+        // EVENTS FOR CLICK........
+        addBtn.addEventListener('click', addFunc);
+        document.addEventListener('keydown', e =>{ if (e.key === 'Enter') addFunc() });
+        // div1.addEventListener("click", function(){
+        //     console.log("yes nnnnnnnnnnnnnnnnnnnnnnnn....")
+        // })
+
+   
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, rgb(25, 127, 159), rgb(94, 153, 164));
+    width: 100%;
+    height: 100vh;
+}
+
+.head-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 70px 0 30px 0;
+}
+
+.head-text h1{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    margin-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.add-section{
+    margin-bottom: 30px;
+}
+.head-text .fa{
+    color: white;
+    font-size: 35px;
+}
+
+.input{
+    outline: none;
+    padding: 10px 20px;
+    width: 300px;
+}
+
+.add-button{
+    padding: 10px 20px;
+    font-weight: bold;
+    color: black;
+    background-color: rgb(52, 52, 199);
+    border: 1px solid rgb(52, 52, 199);
+}
+
+.newDiv{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 371px;
+    height: 40px;
+    margin-bottom: 10px ;
+}
+
+.newDiv-textArea{
+    width: 290px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+}
+.newDiv-textArea .fa{
+    font-size: 25px;
+    margin: 0 25px 0 10px;
+    cursor: pointer;
+}
+
+.class-delete-btn{
+    flex: 1;
+    height: 100%;
+}
+
+.delete-btn{
+    width: 68px;
+    height: 100%;
+    color: white;
+    background-color: red;
+    float: right;
+    border: none;
+    border-radius: 0%;
+    cursor: pointer;
+}
+
+.delete-btn .fa{
+    font-size: 20px;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            background-color: steelblue;
+            color: #fff;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container{
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px 40px;
+            border-radius: 5px;
+            z-index: 0;
+        }
+
+        .container h1{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .form-control{
+            position: relative;
+            margin: 20px 0 40px;
+            width: 300px;
+        }
+
+        input{
+            display: block;
+            background: transparent;
+            border: 0;
+            border-bottom: 2px solid white;
+            width: 100%;
+            padding: 15px 0;
+            font-size: 18px;
+            color: white;
+            z-index: 1;
+        }
+
+        input:valid, input:focus{
+            outline: 0;
+        }
+
+        .btn{
+            width: 100%;
+            padding: 12px;
+            display: inline-block;
+            background: lightblue;
+            border: 0;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .btn:active{
+            transform: scale(.98);
+        }
+
+        label{
+            color: white;
+            position: absolute;
+            top: 15px;
+            left: 0;
+            transition: 0.5s;
+            z-index: -1;
+        }
+
+        input:focus + label{
+            color: lightblue;
+            transform: translateY(-30px) scale(0.9);
+            /* transform: scale(0.9); */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>please login</h1>
+        <form>
+            <div class="form-control">
+                <input type="text" required>
+                <label >Email</label>
+            </div>
+            <div class="form-control">
+                <input type="text" required>
+                <label >Passward</label>
+            </div>
+
+            <button class="btn">Sign Up</button>
+            <p class="text">Don't have any account ? <a href="#">Register</a></p>
+        </form>
+    </div>
+
+    <script>
+        const input = document.querySelectorAll(".form-control label");
+
+        console.log(input);
+    </script>
+</body>
+</html>
