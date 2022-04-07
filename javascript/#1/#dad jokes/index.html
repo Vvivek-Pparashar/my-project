@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: #686de0;
+      }
+      .container {
+        background-color: white;
+        padding: 50px 20px;
+        border-radius: 10px;
+        text-align: center;
+        max-width: 100%;
+        width: 800px;
+        box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+      }
+      h3 {
+        opacity: 0.5;
+      }
+
+      .jokes {
+        font-size: 30px;
+        margin: 50px auto;
+        max-width: 600px;
+        line-height: 40px;
+      }
+
+      .btn {
+        border: 0;
+        border-radius: 10px;
+        background-color: blueviolet;
+        color: white;
+        padding: 14px 40px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .btn:focus {
+        outline: none;
+      }
+
+      .btn:active {
+        transform: scale(0.98);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Don't laugh at jokes</h3>
+      <div id="jokes" class="jokes"></div>
+      <button id="joke-btn" class="btn">Get Another</button>
+    </div>
+
+    <script>
+      const jokes = document.querySelector("#jokes");
+      const btn = document.querySelector("#joke-btn");
+
+      generateJokes();
+
+      async function generateJokes() {
+        try {
+          const request = await fetch("https://icanhazdadjoksdsde.com", {
+            headers: { Accept: "application/json" },
+          });
+
+          const data = await request.json();
+          jokes.innerHTML = data.joke;
+        } catch (err) {
+          alert("you did something wrong");
+        }
+    }
+
+      btn.addEventListener("click", generateJokes);
+
+      // generateJokes();
+
+      // function generateJokes(){
+      //     fetch("https://icanhazdadjoke.com", {
+      //         headers:{
+      //             "Accept": "application/json"
+      //         }
+      //     }).then(request => request.json())
+      //     .then(data => {
+      //         jokes.insertAdjacentHTML("afterbegin", `${data.joke}`)
+      //     });
+      // }
+
+      // btn.addEventListener("click", ()=>{
+      //     jokes.innerHTML = "";
+      //     generateJokes();
+      // });
+    </script>
+  </body>
+</html>

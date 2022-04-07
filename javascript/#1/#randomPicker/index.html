@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background-color: #2b88f0;
+        }
+
+        h3{
+            color: white;
+            margin: 10px 0 20px;
+        }
+
+        .container{
+            width: 500px;
+        }
+
+        textarea{
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            display: block;
+            outline: none;
+            font-size: 16px;
+        }
+
+        .tag{
+            background-color: #f0932b;
+            color: white;
+            border-radius: 50px;
+            padding: 10px 20px;
+            margin: 0 5px 10px 0;
+            font-size: 14px;
+            display: inline-block;
+        }
+
+        .tag.highlight{
+            background-color: #273c75;
+        }
+    </Style>
+</head>
+<body>
+    <div class="container">
+        <h3>Enter all the choices divided by a comma(",").<br>Press Enter when you are done...</h3>
+        <textarea placeholder="Enter your choices" id="textarea"></textarea>
+
+        <div id="tags"></div>
+    </div>
+    <script>
+        const textarea = document.getElementById("textarea");
+        const tags = document.getElementById("tags");
+
+        textarea.addEventListener("keyup", (e)=> {
+            const arr = (e.target.value.split(",").filter(tag => tag.trim() !=="").map(tag =>tag.trim()));
+            tags.innerHTML = "";
+            arr.forEach(e => {
+                console.log(e);
+                console.log(tags);
+                tags.insertAdjacentHTML("afterbegin", `<span class="tag">${e}</span>`)
+            });
+        })
+    </script>
+</body>
+</html>

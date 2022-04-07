@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #f0f0f0;
+
+        }
+
+        h1{
+            text-align: center;
+            margin: 50px 0 30px;
+        }
+
+        .container{
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .faq{
+            background-color: transparent;
+            border: 1px solid #9fa48a;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: 0.3s ease;
+            position: relative;
+        }
+
+        .faq.active{
+            background-color: white;
+        }
+
+        h3{
+            margin: 0 35px 0 0;
+        }
+
+        .faq-text{
+            display: none;
+            margin: 30px 0 0;
+
+        }
+
+        .faq.active .faq-text{
+            display: block;
+        }
+
+        .faq-toggle{
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            padding: 0;
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            height: 30px;
+            width: 30px;
+        }
+
+        .open{
+            display: block;
+        }
+
+        .close{
+            display: none;
+        }
+
+        .faq.active .close{
+            display: block;
+        }
+
+        .faq.active .open{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>FAQs Box Here</h1>
+    <div class="container">
+        <div class="faq active">
+            <h3>Why i am doing javascript</h3>
+            <p class="faq-text">Because u wanted to become a front-end developer</p>
+            <button class = "faq-toggle">
+                <b class="open"> > </b>
+                <b class="close"> X </b>
+            </button>
+        </div>
+        <div class="faq">
+            <h3>Why i am doing javascript</h3>
+            <p class="faq-text">Because u wanted to become a front-end developer</p>
+            <button class = "faq-toggle">
+                <b class="open"> > </b>
+                <b class="close"> X </b>
+            </button>
+        </div>
+        <div class="faq">   
+            <h3>Why i am doing javascript</h3>
+            <p class="faq-text">Because u wanted to become a front-end developer</p>
+            <button class = "faq-toggle">
+                <b class="open"> > </b>
+                <b class="close"> X </b>
+            </button>
+        </div>
+        <div class="faq">
+            <h3>Why i am doing javascript</h3>
+            <p class="faq-text">Because u wanted to become a front-end developer</p>
+            <button class = "faq-toggle">
+                <b class="open"> > </b>
+                <b class="close"> X </b>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        const faq = document.querySelectorAll(".faq")
+        console.log(faq)
+
+        faq.forEach(e => {
+            e.addEventListener("click", ()=>{
+                e.classList.toggle("active");
+            })
+        });
+    </script>
+</body>
+</html>

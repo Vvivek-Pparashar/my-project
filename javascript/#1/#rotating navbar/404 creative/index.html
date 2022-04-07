@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #FFFFFF;
+        }
+
+        .container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            min-height: 400px;
+            min-width: 260px;
+            background-image: radial-gradient(#4679B9, #172E63);
+        }
+
+        .photo{
+            flex: 1;
+            height: 100%;
+            width: 100%;
+            background-image: url("https://i.ibb.co/7J8T2x3/1-removebg.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .text{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .cry{
+            margin-bottom: 30px;
+        }
+        .cry p{
+            font-size: 70px;
+            font-weight: 100;
+            text-align: center;
+        }
+
+        p{
+            font-size: 23px;
+            font-weight: 100;
+        }
+
+        b{
+          font-weight: 600;
+        }
+
+        .button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button {
+            font-size: 15px;
+            color: white;
+            background-color: #3B72B7;
+            padding: 11px 35px;
+            border: none;
+            outline: none;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            cursor: pointer;
+        }
+
+        .btn-1{
+        margin-right: 20px;
+      }
+
+      button:active{
+        transform: scale(0.98);
+      }
+
+        @media screen and (max-width:1050px) {
+            p{
+            font-size: 2vw;
+            }
+
+            .cry p{
+                font-size: 6.3vw;
+            }
+        }
+
+        @media screen and (max-width:700px) {
+            .container{
+                flex-direction: column;
+            }
+
+            .photo{
+                width: 80%;
+                height: 80%;
+                margin: auto;
+            }
+
+            p{
+            font-size: 3vw;
+            }
+
+            .cry p{
+                font-size: 9vw;
+            }
+
+            button{
+                font-size: 2.2vw;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .container{
+                flex-direction: column;
+            }
+
+            .photo{
+                width: 80%;
+                height: 80%;
+                margin: auto;
+            }
+
+            p{
+            font-size: 3.8vw;
+            }
+
+            .cry p{
+                font-size: 9.5vw;
+            }
+
+            button{
+                font-size: 2.7vw;
+                padding: 15px 35px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="photo"></div>
+        <div class="text">
+            <div class="cry">
+                <p>Awww... Don't<br>Cry</p>
+            </div>
+            <p>It's just an <b>other extention of our website</b> still, <b>makes360</b> is with you</p>
+            <div class="button">
+                <button class="btn-1">Main WebSite</button>
+                <button>Play Games</button>
+              </div>
+        </div>
+    </div>
+    
+</body>
+</html>

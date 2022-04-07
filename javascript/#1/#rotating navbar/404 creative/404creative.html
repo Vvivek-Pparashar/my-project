@@ -18,7 +18,6 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        /* align-items: center; */
       }
 
       .photo {
@@ -44,7 +43,9 @@
         margin-bottom: 20px;
       }
 
-      .cry {margin-top: 100px;}
+      .cry {
+        margin-top: 100px;
+      }
 
       .cry,
       .cry2 {
@@ -52,25 +53,49 @@
         font-weight: 100;
       }
 
-      .cry2{margin-bottom: 50px;}
+      .cry2 {
+        margin-bottom: 50px;
+      }
 
       button {
         font-size: 15px;
         color: white;
         background-color: #0083ca;
-        padding: 11px 25px;
+        padding: 11px 35px;
         border: none;
         outline: none;
         margin-top: 40px;
+        margin-bottom: 40px;
         cursor: pointer;
       }
 
-      p{
+      .btn-1{
+        margin-right: 20px;
+      }
+
+      button:active{
+        transform: scale(0.98);
+      }
+
+      p {
         font-size: 26px;
         font-weight: 100;
+        color: #206c95;
       }
-      b{
-          font-weight: 600;
+      b {
+        font-weight: 600;
+        color: #1e5f83;
+      }
+
+      @media screen and (max-width: 1050px) {
+        p {
+          font-size: 2.6vw;
+        }
+
+        .cry,
+        .cry2 {
+          font-size: 6vw;
+        }
       }
     </style>
   </head>
@@ -82,7 +107,11 @@
         <p class="cry2">Cry</p>
 
         <p>It's just a <b>404</b> error still, <b>makes360</b> is with you</p>
-        <button>Here Play Some Games</button>
+
+        <div class="button">
+          <button class="btn-1">Main WebSite</button>
+          <button>Play Games</button>
+        </div>
       </div>
     </div>
   </body>
