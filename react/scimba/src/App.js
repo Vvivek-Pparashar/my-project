@@ -1,23 +1,28 @@
-import './App.css';
-import Card from './components/Card';
-import Comp from './components/Comp';
-import MainContent from './components/MainConent';
-import NavBar from './components/NavBar';
+import React from 'react'
+import {Navbar, Feature , Article , Brand , Cta   } from './components/index'
+import {Footer, Blog, Possibility, Features, WhatGPT3, Header} from './containers/index'
+import './App.css'
 
-export default function App() {
+
+
+const App = () => {
   return (
-    <>
-      <NavBar/>
-      <MainContent/>
-      <Card heading = "vivek is goof man"/>
-      <div className="div">
-        <Comp name = "viek" mail = "vivek parashartkd@gmaiil.com" number="9999999999"/>
-        <Comp name = "Parashar" mail = "vivek parashartkd@gmaiil.com" number="9999999999"/>
+    <div>
+      <div className="App">
+        <div className="gradient__bg">
+          <Navbar/>
+          <Header/>
+        </div>
+          <Brand/>
+          <WhatGPT3/>
+          <Features/>
+          <Possibility/>
+          <Cta/>
+          <Blog/>
+          <Footer/>
       </div>
-      <div className="div">
-        <Comp name = "Sharma" mail = "vivek parashartkd@gmaiil.com" number="9999999999"/>
-        <Comp name = "skdjfhskjfh" mail = "vivek parashartkd@gmaiil.com" number="9999999999"/>
-      </div>
-    </>
-  );
+    </div>
+  )
 }
+
+export default App
