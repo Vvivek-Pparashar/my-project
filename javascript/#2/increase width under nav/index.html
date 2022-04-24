@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+            transition:all  0.25s linear;
+        }
+
+        body{
+            height: 10000px;
+        }
+
+        .conatiner{
+            width: 100vw;
+            height: 70px;
+            position: fixed;
+            top: 0;
+            left: 0%;
+            background-color: black;
+        }
+
+
+        .vivek{
+            width: 100vw;
+            height: 3px;
+            position: fixed;
+            background-color: yellow;
+            margin-top: 70px;
+            
+        }
+
+        .line{
+            width: 0px;
+            height: 3px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: red;
+            z-index: 10;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="conatiner"></div>
+    <div class="vivek">
+        <div class="line"></div>
+    </div>
+    
+    <script>
+        const line = document.querySelector(".line")
+
+        window.addEventListener("scroll", ()=>{
+            // console.log(line.style.width)
+            //if(scrollY === 0) line.style.width = `${(scrollY)/1000 *100}vw`
+            // const t_s = 1000-screen.height
+            // const n_s = (t_s - scrollX)/1000;
+
+            //  line.style.width = `${n_s*100}vw`
+            // console.log(line.getBoundingClientRect())
+
+            const body = document.documentElement.scrollHeight - screen.height;
+            console.log(body.scrollHeight, body.offsetHeight)
+
+            const vi = Math.ceil(scrollY/body *100)
+             line.style.width = `${vi}vw`
+            // console.log(scrollY/343 *100)
+        })
+
+        
+    </script>
+</body>
+</html>

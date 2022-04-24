@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 400px;
+            flex-wrap: wrap;
+        }
+
+        .square{
+            background-color: wheat;
+            box-shadow: 0 0 2px #000;
+            height: 16px;
+            width: 16px;
+            margin: 2px;
+            transition: 1s ease;
+            
+        }
+
+        .square:hover{
+            transition-duration:0s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="container"></div>
+
+    <script>
+        const container = document.getElementById('container')
+        const colors = ['#e74c3c', '#8e44ad', '#3498db', '#e67e22', '#2ecc71']
+        const SQUARES = 500
+
+        for(let i = 0; i < SQUARES; i++) {
+            const square = document.createElement('div')
+            square.classList.add('square')
+
+            square.addEventListener('mouseover', () => setColor(square))
+
+            square.addEventListener('mouseout', () => removeColor(square))
+
+            container.appendChild(square)
+        }
+
+        const setColor = (sq)=>{
+            sq.style.backgroundColor = `${colors[Math.ceil(Math.random()*5)]}`
+        }
+
+        const removeColor = (sq)=>{
+            sq.style.backgroundColor = "wheat"
+        }
+    </script>
+</body>
+</html>

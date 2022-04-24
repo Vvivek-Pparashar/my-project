@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="image">
+                <img src="images/logo.png" alt="logo for this company">
+            </div>
+            <div class="ul">
+                <ul>
+                    <li>home</li>
+                    <li>link</li>
+                    <li>about</li>
+                </ul>
+                <button class = "button"type="button"><span class="span"></span></button>
+            </div>
+        </nav>
+        <div class="lamp-container">
+            <img src="images/lamp.png" alt="lamp image for dark mode effect" class="lamp">
+            <img src="images/light.png" alt="light" class="light" id="light">
+        </div>
+
+        <div class="hero">
+            <div class="div"></div>
+            <div class="content">
+                <h1>Latest <br> in lighting</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Doloribus placeat dicta dolores labore facere minus, deleniti voluptas quo aliquid? Animi?</p>
+                <button>Check all colection</button>
+                <label for="vivek">change the intensity</label>
+                <input type="range" class="vivek" id="vivek">
+            </div>
+        </div>
+
+        
+    </header>
+
+    <script>
+        const button = document.querySelector(".button");
+        const span = document.querySelector(".span");
+        const vivek = document.querySelector(".vivek");
+        const light = document.getElementById("light")
+
+
+        function changeIntensity(){
+            light.style.width = `${5.7*vivek.value}px`;
+            light.style.left = `${370 - 5.7*(vivek.value/2) +2}px`;
+        }
+
+        function toggleClass(){
+            span.classList.toggle("clicked");
+            button.classList.toggle("clicked");
+            light.classList.toggle("clicked")
+        }
+
+        function drag(){
+            window.addEventListener("mousemove", ()=>{
+                console.log("hold")
+                light.style.width = `${5.7*vivek.value}px`;
+                light.style.left = `${370 - 5.7*(vivek.value/2) +2}px`;
+            })
+            
+            
+        }
+
+
+        changeIntensity();
+
+        button.addEventListener("click", toggleClass);
+        // vivek.addEventListener("change", changeIntensity);
+        vivek.addEventListener("mousedown", drag)
+
+            
+     
+
+
+    </script>
+</body>
+</html>

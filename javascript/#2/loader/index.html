@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        .kinetic{
+            width: 80px;
+            height: 80px;
+            position: relative;
+            
+        }
+
+        .kinetic::after, 
+        .kinetic::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+            width: 0;
+            height: 0;
+            border: 50px solid transparent;
+            border-bottom-color:  white;
+            animation: rotateA 2s linear infinite .5s;
+            
+        }
+
+        .kinetic::before{
+            transform: rotate(90deg);
+            animation: rotateB 2s linear infinite ;
+        }
+
+        @keyframes rotateA{
+            0%, 25%{
+                transform: rotate(0deg);
+            }
+
+            50%, 75%{
+                transform: rotate(180deg);
+            }
+
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes rotateB{
+            0%, 25%{
+                transform: rotate(90deg);
+            }
+
+            50%, 75%{
+                transform: rotate(270deg);
+            }
+
+            100%{
+                transform: rotate(450deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="kinetic"></div>
+</body>
+</html>
