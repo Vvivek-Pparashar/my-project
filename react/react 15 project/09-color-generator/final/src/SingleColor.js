@@ -9,7 +9,7 @@ const SingleColor = ({ rgb, weight, index, hexColor }) => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setAlert(false)
-    }, 3000)
+    }, 1000)
     return () => clearTimeout(timeout)
   }, [alert])
   return (

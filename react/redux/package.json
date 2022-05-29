@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "react": "^18.1.0"
+  },
+  "scripts": {
+    "start": "node your-script.js"
+}
+}
