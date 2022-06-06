@@ -1,0 +1,15 @@
+{
+  "name": "notours",
+  "version": "1.0.0",
+  "description": "learning node, express and mongodb with mongoose",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "vivek parashar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "morgan": "^1.10.0"
+  }
+}
