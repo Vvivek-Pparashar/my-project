@@ -1,47 +1,42 @@
-https://www.codechef.com/cptutorials?itm_medium=navmenu&itm_campaign=cptutorials
-TAKEYOUFORWARD   	REFERAAL
-ALL C.P
-
+------------------------	Left to use 	-------------------
 https://mega.nz/folder/veRj2SKL#ZJ0761L25XMtc6pAb5KfSA
 gfg
-
 
 https://freelearningapp.com/course/mastering-data-structures-algorithms-using-c-and-c-updated
 dsa
 
-
-https://mega.nz/folder/t45ngQJJ#OYq7XPvwf6mD590NgS_l1w/folder/E9xRkIQR
-jonas
-
-
 https://hacksnation.com/d/2149-codingminutecompetitive-programming-essentials-master-algorithms
 c.p udemy
-
-
-https://thejavasea.com/threads/udemy-%E2%80%93node-js-express-mongodb-more-the-complete-bootcamp-2022-2021-7.5387/
-nodejs
-
-
-https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/
-take u forward question 
-
-
-https://drive.google.com/file/d/1FMdN_OCfOI0iAeDlqswCiC2DZzD4nPsb/view
-love babbar question
-
 
 https://www.udemy.com/course/learn-nodejs-by-building-10-projects/
 nodejs project
 
 
-https://mega.nz/folder/YlIgzRxY#Lv-4lj2ChF2fbyNi4L31ig
-react udemy 
+-----------------Questions -----------------------
+https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/
+take u forward question 
 
-
-https://drive.google.com/drive/folders/1HSWbP3k8-bDcvt2t7RL2jrrC9Nj-cB91
-js with practice
-
+https://drive.google.com/file/d/1FMdN_OCfOI0iAeDlqswCiC2DZzD4nPsb/view
+love babbar question
 
 https://www.geeksforgeeks.org/dsa-sheet-by-love-babbar/
 gfg love babbar question.....
+
+https://www.codechef.com/cptutorials?itm_medium=navmenu&itm_campaign=cptutorials
+TAKEYOUFORWARD   	REFERAAL
+ALL C.P
+
+--------------------Used------------------------
+
+https://mega.nz/folder/t45ngQJJ#OYq7XPvwf6mD590NgS_l1w/folder/E9xRkIQR
+jonas
+
+https://mega.nz/folder/YlIgzRxY#Lv-4lj2ChF2fbyNi4L31ig
+react udemy 
+
+https://thejavasea.com/threads/udemy-%E2%80%93node-js-express-mongodb-more-the-complete-bootcamp-2022-2021-7.5387/
+nodejs
+
+https://drive.google.com/drive/folders/1HSWbP3k8-bDcvt2t7RL2jrrC9Nj-cB91
+js with practice
 

@@ -1,0 +1,42 @@
+			WEB DEVELOPMENT UDEMY COURSE LIST
+--------------		FrontEnd		-----------------
+
+HTML AND CSS by jonas
+https://wsodownloads.io/udemy-build-responsive-real-world-websites-with-html-and-css/
+
+Scss by jonas
+https://drive.google.com/drive/folders/1eAUqpja4c5b0VYog6MurBtf-YXrCYIQ1
+
+Js By jonas
+https://mega.nz/folder/t45ngQJJ#OYq7XPvwf6mD590NgS_l1w/folder/E9xRkIQR
+
+Js with practice
+https://drive.google.com/drive/folders/1HSWbP3k8-bDcvt2t7RL2jrrC9Nj-cB91
+
+React by maximilian
+https://mega.nz/folder/YlIgzRxY#Lv-4lj2ChF2fbyNi4L31ig
+
+Angular by maximilian
+https://hacksnation.com/d/5143-download-angular-the-complete-guide-2022-edition-for-free
+
+Vue by maximilian
+https://course-downloader.com/vue-the-complete-guide-w-router-vuex-composition-api
+
+TypeScript by maximilian
+https://course-downloader.com/understanding-typescript-2022-edition
+
+--------------		BackEnd		-----------------
+
+NodeJs by jonas
+https://thejavasea.com/threads/udemy-%E2%80%93node-js-express-mongodb-more-the-complete-bootcamp-2022-2021-7.5387/
+
+PHP
+https://course-downloader.com/php-for-beginners-become-a-php-master-cms-project-6792
+
+Django
+https://course-downloader.com/python-and-django-full-stack-web-developer-bootcamp-6558
+
+--------------		Bootcamp		-----------------
+
+BootCamp by Angelia Yu
+https://course-downloader.com/the-complete-2020-web-development-bootcamp-free-download
