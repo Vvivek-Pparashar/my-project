@@ -23,7 +23,7 @@ const isMatch = useMediaQuery(theme.breakpoints.down('md'))
                     
                     (
                     <>
-                        <Tabs textColor='inherit' sx = {{ml: 'auto'}} value= {value} indicatorColor='secondary'  onChange={(e, value)=>{setValue(value)}}>
+                        <Tabs  sx = {{ml: 'auto'}} value= {value}   onChange={(e, value)=>{setValue(value)}}>
                         <Tab label = 'Products'/>
                             <Tab label = 'Home'/>
                             <Tab label = 'About'/>
